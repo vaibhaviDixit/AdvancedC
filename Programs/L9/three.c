@@ -1,5 +1,15 @@
 /*
 Implement the Quick Sort algorithm to sort an array of custom struct elements based on a specific field (e.g., age).
+
+Example:
+Original ARray: {{"Alice", 25}, {"Bob", 19}, {"John", 37}, {"Emily", 32}}
+
+Sorted array:
+Name: Bob, Age: 19
+Name: Alice, Age: 25
+Name: Emily, Age: 32
+Name: John, Age: 37
+
 */
 #include <stdio.h>
 #include <string.h>

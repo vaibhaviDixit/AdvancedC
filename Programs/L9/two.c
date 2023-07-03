@@ -1,5 +1,13 @@
 /*
 Implement the Quick Sort algorithm to sort an array of strings in lexicographical order.
+
+Input:
+{"banana", "apple", "grape", "orange", "pear"}
+
+Output:
+Sorted array:
+apple banana grape orange pear
+
 */
 
 #include <stdio.h>
@@ -47,7 +55,7 @@ int main() {
 
     printf("Sorted array:\n");
     for (int i = 0; i < size; i++) {
-        printf("%s\n", arr[i]);
+        printf("%s ", arr[i]);
     }
 
     return 0;
