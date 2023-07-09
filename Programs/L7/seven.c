@@ -1,5 +1,5 @@
 /*
-Write a program to reverse the contents of a text file.
+Write a program to reverse read the contents of a text file.
 */
 #include <stdio.h>
 

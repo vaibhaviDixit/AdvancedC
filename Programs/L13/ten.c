@@ -89,7 +89,7 @@ void findFirstNegativeInWindow(int arr[], int n, int k) {
 }
 
 int main() {
-    int arr[] = { 12, -1, -7, 8, -15, 30, 16, 28 };
+    int arr[] = { -5, -1, -7, 8, -9};
     int n = sizeof(arr) / sizeof(arr[0]);
     int k = 3;
 

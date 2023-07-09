@@ -10,7 +10,7 @@ Input: 50
 Output: Value is within the valid range.
 
 Input: 150
-Output: Value exceeds maximum limit..
+Output: Value exceeds maximum limit.
 
 Input: -10
 Output: Value is below minimum limit.
