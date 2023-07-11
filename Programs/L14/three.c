@@ -52,7 +52,7 @@ int printTour(struct petrolPump arr[], int n)
 
 int main()
 {
-	struct petrolPump arr[] = {{6, 4}, {3, 6}, {7, 3}};
+	struct petrolPump arr[] = {{4, 6}, {3, 5}, {2, 3}, {4, 8}};
 
 	int n = sizeof(arr)/sizeof(arr[0]);
 	int start = printTour(arr, n);

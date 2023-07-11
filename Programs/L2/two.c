@@ -1,5 +1,6 @@
 /*
-C Program to check if number is even or odd using macro.
+Kids are learning even and odd numbers. Help them in their homework to check if number is even or odd.
+Make use of macros.
 
 Input: 10
 Output: 10 is even

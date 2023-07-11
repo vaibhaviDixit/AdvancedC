@@ -50,7 +50,7 @@ void push(Stack* stack, int n) {
             }
         }
 
-        printf("%d inserted in stack\n", n);
+        //printf("%d inserted in stack\n", n);
     }
 }
 
@@ -77,14 +77,18 @@ void max(Stack* stack) {
 
 int main() {
     Stack* S1 = createStack(5);                                          // Create a stack of size 5
+    int n,ele;
+    printf("Enter total number of elements in stack");
+    scanf("%d",&n);
 
-    push(S1, 2);
-    max(S1);
-    push(S1, 6);
-    max(S1);
-    pop(S1);
-    max(S1);
+     printf("Enter elements");
+    for(int i=0;i<n;i++){
+        scanf("%d",&ele);
+        push(S1, ele);
+    }
 
+
+    max(S1);
     return 0;
 }
 

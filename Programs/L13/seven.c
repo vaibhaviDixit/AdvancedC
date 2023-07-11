@@ -64,8 +64,8 @@ void maxSlidingWindow(int nums[], int size, int k)
 
 int main()
 {
-    int nums[] = {1, 3, -1, -3, 5, 3, 6, 7};
-    int k = 3;
+    int nums[] = {2, 3, 0, -6, 4, 3};
+    int k = 2;
     int size = sizeof(nums) / sizeof(nums[0]);
 
     maxSlidingWindow(nums, size, k);
