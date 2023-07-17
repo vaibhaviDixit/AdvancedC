@@ -1,5 +1,11 @@
 /*
+A group of spies received a secret message encoded as a character string.
+They need to decode and print the hidden message to gather critical information about an enemy operation.
 Print a character string using pointer arithmetic.
+
+Input: Hello
+Output: Hello
+
 */
 
 #include <iostream>

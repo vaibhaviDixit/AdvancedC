@@ -1,5 +1,7 @@
 /*
-Calculate the sum of elements in an integer array using pointer arithmetic.
+In a retail store, the manager wants to calculate the total sales made in a day.
+The sales data is stored in an integer array. Instead of using the traditional indexing method, the store manager decides to challenge
+the sales team to use pointer arithmetic to calculate the total sales.
 
 Input: {1, 2, 3, 4, 5}
 Output: Sum of array elements: 15

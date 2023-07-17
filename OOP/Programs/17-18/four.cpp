@@ -1,5 +1,7 @@
 /*
-Count the length of the longest sequence of consecutive set bits in a given integer
+Alex and Bella are playing a game with binary numbers. Alex gives Bella a positive integer, and Bella's task is to find the length of the
+longest sequence of consecutive set bits (1s) in the binary representation of the given integer.
+write program to help Bella.
 
 Input: 19
 Output: Length of longest sequence of consecutive set bits: 2

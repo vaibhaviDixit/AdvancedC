@@ -1,5 +1,6 @@
 /*
-Write a C++ program to perform addition of two complex numbers and three complex numbers using method overloading.
+Design a C++ program for a complex number addition calculator.
+The calculator will allow users to perform addition of two complex numbers and three complex numbers using method overloading.
 
 Example:
 
@@ -50,3 +51,13 @@ int main()
 
     return 0;
 }
+
+/*
+C++ program  utilize method overloading to handle addition for both two and three complex numbers.
+The program would prompt the user for real and imaginary parts of the complex numbers and display the results of the addition operations.
+It provides a user-friendly interface for performing complex number addition calculations with ease.
+
+*/
+
+
+

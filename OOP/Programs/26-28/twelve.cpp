@@ -1,6 +1,10 @@
 /*
-Create and use one pointer to print the values of different data types.
+Sherlock's pointer is a magical instrument that can dynamically point to various data types and reveal their values.
+With the help of this pointer, Sherlock can roam through the town, peek into various data structures, and print out the values hidden within them.
+Write a program for Sherlock's pointer to point different data structures.
+
 */
+
 #include <iostream>
 
 int main() {

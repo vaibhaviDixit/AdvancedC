@@ -1,5 +1,7 @@
 /*
-Write a C++ program to concatenate two strings and three strings using method overloading.
+Alex is working on a C++ program that involves string concatenation.
+They want to create a program that can concatenate two strings or three strings based on user input using method overloading.
+Alex plans to implement a C++ class that will handle the concatenation operations.
 
 Example:
 Enter string 1: hello
@@ -46,3 +48,8 @@ int main()
 
     return 0;
 }
+
+/*
+Above program concatenated the two or three strings based on user input.
+strings are passed as const so functions could not modify the strings further.
+*/

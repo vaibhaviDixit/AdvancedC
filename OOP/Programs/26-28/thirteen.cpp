@@ -1,5 +1,8 @@
 /*
-Access a dangling pointer and observe the unpredictable behavior.
+Once upon a time in a software kingdom, there was a young programmer named Alice.
+She was working on a magical program that involved handling pointers, one pointer was pointing to a mysterious location.
+Access "The Unpredictable Pointer" and see what lies hidden at its destination.
+
 */
 
 #include <iostream>

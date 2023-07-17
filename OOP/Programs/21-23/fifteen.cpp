@@ -2,7 +2,7 @@
 Write a C++ program to print a rectangle, triangle, and circle using method overloading.
 
 Example:
-
+Enter the width and height of the rectangle: 5 4
 Rectangle:
 * * * * *
 * * * * *

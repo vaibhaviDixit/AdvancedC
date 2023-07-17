@@ -1,5 +1,8 @@
 /*
+You are working on a software project that requires handling a large number of elements using a stack data structure.
+However, the size of the stack is not fixed, and it needs to grow or shrink based on the number of elements added or removed.
 Write a program to implement a dynamic stack using pointers.
+
 */
 
 

@@ -1,5 +1,10 @@
 /*
-Program to rotate a matrix by 90 degrees clockwise
+In a bustling pizzeria, the chef is always looking for ways to innovate and serve the customers better.
+One day, the chef came up with a brilliant idea to rotate the pizza toppings to create a new flavor experience for the customers.
+To achieve this, the chef needs your help to implement a program that rotates the pizza toppings by 90 degrees clockwise.
+
+The pizza is represented as a square matrix, where each cell contains a different topping ingredient.
+The chef wants to rotate the matrix by 90 degrees clockwise so that the toppings shift in a circular manner.
 
 Input: {{1, 2, 3},
         {4, 5, 6},

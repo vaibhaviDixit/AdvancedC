@@ -1,5 +1,10 @@
 /*
-Write a program to reverse a string using pointers.
+In a busy conference hall, there is an event where participants are wearing name badges with their names printed on them.
+The organizers notice that some name badges were printed incorrectly, with the names spelled backward.
+To quickly correct these badges, they decide to use a computer program that reverses the names using pointers.
+
+Write a program to reverse a name badge using pointers.
+The program should take the name as input and use pointers to reverse the order of characters in the name, correcting any badges with backward names.
 
 Input: Before reverse: Hello, World!
 Output: After reverse: !dlroW ,olleH

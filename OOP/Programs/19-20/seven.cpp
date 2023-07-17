@@ -1,5 +1,6 @@
 /*
-Program to find the transpose of a matrix
+In a high school mathematics class, the teacher is introducing the concept of matrix transposition to the students.
+Students are tasked to find transpose of matrix. Write a Program to help students.
 
 Input: {{1, 2},
         {3, 4},

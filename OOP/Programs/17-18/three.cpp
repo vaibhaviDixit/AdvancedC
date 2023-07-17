@@ -1,5 +1,8 @@
 /*
-Given a number Check if a given number is a power of 2
+In a video game called "Magical Potions," players can collect magical potions to boost their power.
+Each magical potion has a unique numeric value associated with it.
+Players are curious to know if a particular potion can be represented as a power of 2.
+You need to help them by creating a program that checks if a given potion's value is a power of 2 or not.
 
 Input: 16
 Output:16 is a power of 2.

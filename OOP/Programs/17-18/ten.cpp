@@ -1,5 +1,5 @@
 /*
-Check if a given string is a palindrome.
+Alice and Bob are participating in a coding competition. The challenge they are facing is to check whether a given string is a palindrome or not.
 
 Input: mom
 Output: mom is a palindrome.

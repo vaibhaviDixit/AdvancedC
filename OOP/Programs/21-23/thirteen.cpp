@@ -1,5 +1,7 @@
 /*
-Write a C++ program to sort an array of integers and an array of floats using method overloading.
+
+We have two types of arrays one is integer and another is float type.
+Your task is to sort an array of integers and an array of floats using method overloading.
 
 Example:
 
@@ -98,3 +100,7 @@ int main()
 
     return 0;
 }
+
+/*
+We have used bubble sort technique to sort the arrays in above program.
+*/

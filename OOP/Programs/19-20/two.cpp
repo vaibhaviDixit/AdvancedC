@@ -1,4 +1,6 @@
 /*
+In a small town, there's a group of children who love to play a game called "Array Reversal."
+The game involves an array of numbers, and the objective is to reverse the order of elements in the array.
 Implement a Program to reverse the elements of an array
 
 Input: Original array: 1 2 3 4 5

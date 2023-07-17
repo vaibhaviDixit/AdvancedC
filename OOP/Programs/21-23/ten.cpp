@@ -1,5 +1,6 @@
 /*
-Write a C++ program to find the sum, average, and maximum element of an array of integers and an array of floats using method overloading.
+You have to find the sum, average, and maximum element of an array of integers and an array of floats.
+Write the program for same using method overloading.
 
 Example:
 
@@ -127,3 +128,8 @@ int main()
 
     return 0;
 }
+
+/*
+In above program we have overloaded 3 methods to find the sum, average, and maximum element of an array of integers and an array of floats.
+*/
+

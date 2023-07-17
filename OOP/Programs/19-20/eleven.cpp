@@ -1,5 +1,5 @@
 /*
-Program to find the leaders in an array, where a leader is an element that is greater than all the elements to its right
+Write a Program to find the leaders in an array, where a leader is an element that is greater than all the elements to its right
 
 Input: {16, 17, 4, 3, 5, 2}
 Output: Leaders: 2 5 17

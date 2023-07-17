@@ -1,5 +1,7 @@
 /*
-Write a C++ program to convert distance from meters to kilometers and from kilometers to miles using method overloading.
+You are a travel enthusiast planning a road trip to different destinations around the world.
+You want to create a C++ program that helps you convert distances between different units to make your travel planning easier.
+Convert distance from meters to kilometers and from kilometers to miles using method overloading.
 
 Example:
 
@@ -68,3 +70,11 @@ int main()
 
     return 0;
 }
+
+/*
+Program above asks for the distance value and its unit from the user, and based on the chosen unit, it will convert the distance to the desired unit.
+The user can switch between meters to kilometers and kilometers to miles conversions as needed.
+
+*/
+
+

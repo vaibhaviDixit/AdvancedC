@@ -1,5 +1,5 @@
 /*
-Write a cpp program to Calculate the Body Mass Index (BMI)
+Help fitness manager to Calculate the Body Mass Index (BMI) of clients.
 
 Input: Enter weight(kg) and height(m^2) 72.57 1.78
 Output: The Body Mass Index (BMI) is: 22.9043

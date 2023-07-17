@@ -1,5 +1,6 @@
 /*
-Write a program to check if a string is a palindrome using pointers.
+In a language learning application, a new word game called "Palindromic Word Detector" is introduced to challenge users' language and programming skills.
+The game requires users to enter a word, and the application will check if the word is a palindrome using pointers.
 
 Input: Madam
 Output: Palindrome

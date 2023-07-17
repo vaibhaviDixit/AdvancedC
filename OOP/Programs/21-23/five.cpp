@@ -1,5 +1,7 @@
 /*
-Write a C++ program to calculate the area of a rectangle, circle using method overloading.
+You want to designing a simple computer program for a shape calculator.
+Users can input the dimensions of either a rectangle or a circle, and the program will calculate and display the respective
+areas using method overloading.
 
 Example:
 

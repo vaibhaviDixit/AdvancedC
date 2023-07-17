@@ -1,5 +1,12 @@
 /*
 Write a program to display the size of various data types in C++.
+
+Example:
+
+Size of int: 4 bytes
+Size of float: 4 bytes
+Size of double: 8 bytes
+Size of char: 1 byte
 */
 
 #include <iostream>

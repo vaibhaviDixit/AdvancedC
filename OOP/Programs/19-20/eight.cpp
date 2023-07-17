@@ -1,5 +1,6 @@
 /*
-Program to find the maximum element in each row of a matrix
+Students are arranged in matrix form for assembly.
+Help coach to find the maximum height student in each row of a students
 
 Input: {{1, 2, 3}, {4, 5, 6}, {7, 8, 9}}
 

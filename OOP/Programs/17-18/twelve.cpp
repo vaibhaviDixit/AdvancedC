@@ -1,5 +1,5 @@
 /*
-Calculate the sum of digits of a given number.
+Generate a magical number which is equal to the sum of digits of a given number.
 
 Input: 549
 Output: Sum of digits: 18

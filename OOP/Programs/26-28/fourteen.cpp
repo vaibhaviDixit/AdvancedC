@@ -1,5 +1,9 @@
 /*
-Perform pointer arithmetic on a void pointer.
+You are working on a secret project at your top-notch research lab.
+Your team has received a mysterious data structure that contains valuable information, but its internal layout is unknown.
+The data structure is represented as a void pointer to keep its contents hidden.
+
+To unravel the secrets hidden within, you need to perform pointer arithmetic on this void pointer. .
 */
 
 #include <iostream>

@@ -1,5 +1,12 @@
-/* Write a program to calculate the exponentiation of a number.
-    The program should take the base and exponent as arguments, with default values of 2 and 3 respectively.
+/*
+Alice and Bob are students studying in the same class. They were given a challenge by their teacher to calculate the exponentiation of a given number.
+The teacher gave them a number 'base' and an exponent 'power' and asked them to
+write a program to find the result of 'base' raised to the power of 'power'.
+The program should take the base and exponent as arguments, with default values of 2 and 3 respectively.
+
+Input: base= 4, exponent=3
+Output: Result: 64
+
 */
 
 #include <iostream>

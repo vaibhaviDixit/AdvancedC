@@ -1,5 +1,10 @@
 /*
- Write a program to create a linked list using dynamic memory allocation.
+ In a school, the administration wants to maintain a specific students roll numbers efficiently.
+ They need a program that allows them to create a linked list to store the student roll numbers.
+ The program should dynamically allocate memory to optimize memory usage.
+
+ Input: 11 26 32 49
+ Output: Linked List: 11 26 32 49
 */
 
 #include <iostream>

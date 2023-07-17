@@ -1,5 +1,6 @@
 /*
-Write a program to swap two arrays using pointers.
+We have two arrays of numbers. The task is to swap the two arrays using pointers.
+
 
 Input:
 Array 1 before swapping: 1 2 3 4 5

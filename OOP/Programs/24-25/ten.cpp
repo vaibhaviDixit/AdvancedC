@@ -1,5 +1,7 @@
 /*
-Write a program to find the average of array elements using pointers.
+In a school, the teacher wants to calculate the average test score of a group of students.
+The teacher has already collected the test scores of each student and stored them in an array.
+However, to save memory and improve performance, the teacher decides to use pointers to calculate the average instead of copying the entire array.
 
 Input: 1, 2, 3, 4, 5
 Output: Average of array elements: 3

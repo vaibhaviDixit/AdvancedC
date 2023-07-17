@@ -1,5 +1,5 @@
 /*
-Write a C++ program to perform addition, subtraction, and multiplication of two matrices using method overloading.
+Write a C++ program to perform addition, subtraction, and multiplication of two matrices.
 
 Enter the number of rows and columns of matrix 1: 2 2
 Enter the elements of matrix 1:
@@ -158,3 +158,11 @@ int main()
 
     return 0;
 }
+
+/*
+Above program calculates the addition, multiplication and subtraction of two matrices.
+It check the particular condition is satisfied to perform particular operation on matrices.
+
+*/
+
+

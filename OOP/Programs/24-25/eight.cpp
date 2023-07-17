@@ -1,5 +1,8 @@
 /*
-Write a program to count the number of words in a string using pointers.
+Emma, a student, has been assigned a task by her computer science teacher.
+The task is to write a program that counts the number of words in a given string.
+To make it more interesting, her teacher challenges her to use pointers in the program.
+Help Emma to complete the task.
 
 Input: "Hello, how are you?"
 Output: Number of words: 4

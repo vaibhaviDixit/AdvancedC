@@ -1,5 +1,6 @@
 /*
-Write a program to generate the Fibonacci series.
+Alice is learning how to program and wants to practice by writing a program to generate the Fibonacci series.
+Help alice to generate Fibonacci series.
 
 Input: Enter the number of terms: 8
 Output: Fibonacci series: 0 1 1 2 3 5 8 13

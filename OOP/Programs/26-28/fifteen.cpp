@@ -1,5 +1,10 @@
 /*
-Check if a pointer is null before dereferencing it.
+In a thrilling treasure hunt game, players navigate through a mysterious and ancient maze to find hidden treasures.
+To ensure their safety during the treasure hunt, players must follow a rule: "Check if a pointer is null before dereferencing it."
+Write a simple program to help player in thrilling treasure hunt game.
+
+Input: ptr=NULL
+Output:  Pointer is null!
 */
 
 #include <iostream>

@@ -1,5 +1,6 @@
 /*
-Write a C++ program to calculate the sum of two integers, three integers, and two floats using same method name.
+Alex is a software developer working on a project that involves calculating the sum of different sets of numbers.
+The project requires a C++ program to calculate the sum of two integers, three integers, and two floats using the same method name.
 
 Example:
 Enter two integers: 4 5
@@ -54,3 +55,7 @@ int main()
 
     return 0;
 }
+
+/*
+above program uses concept of method overloading to achieve the solution.
+*/

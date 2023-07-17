@@ -1,5 +1,8 @@
 /*
- Write a program to implement a dynamic queue using pointers.
+Sarah is running a popular amusement park, and she wants to manage the queue of visitors waiting for a popular ride.
+However, the queue size varies throughout the day as more visitors arrive.
+Sarah needs a program to efficiently manage the queue, and she decides to implement a dynamic queue using pointers
+
 */
 
 

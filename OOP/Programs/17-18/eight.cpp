@@ -1,5 +1,5 @@
 /*
-Given N,  reverse the digits of N.
+Given the number N, reverse the digits of N.
 
 Input: 3748
 Output: 8473

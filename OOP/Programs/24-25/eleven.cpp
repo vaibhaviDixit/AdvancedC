@@ -1,8 +1,9 @@
 /*
-Write a program to find the second largest element in an array using pointers.
+Write a program that reads the heights of the students from the teacher's input and stores them in an array.
+Use pointers to compare the heights and determine the second tallest student in the class.
 
 Input: {5, 8, 3, 9, 2}
-Output: Second largest element: 8
+Output: Second largest : 8
 
 */
 #include <iostream>
@@ -33,7 +34,7 @@ int main() {
     int arr[] = {5, 8, 3, 9, 2};  // Declare and initialize an integer array
     int size = sizeof(arr) / sizeof(arr[0]);  // Calculate the size of the array
     int secondLargest = findSecondLargest(arr, size);  // Call the function to find the second largest element
-    std::cout << "Second largest element: " << secondLargest << std::endl;  // Print the second largest element
+    std::cout << "Second largest : " << secondLargest << std::endl;  // Print the second largest element
     return 0;  // Return 0 to indicate successful execution
 }
 

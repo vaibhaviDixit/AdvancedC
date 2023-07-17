@@ -1,8 +1,10 @@
 /*
-C++ Program to Print Armstrong Numbers Between 1 to 1000.
+In a mathematics class, the teacher challenges the students to find all Armstrong numbers between 1 and 1000.
+An Armstrong number (also known as a narcissistic number) is a number that is equal to the sum of its own digits each raised to the power
+of the number of digits in the number.
+For example, 153 is an Armstrong number because 1^3 + 5^3 + 3^3 = 153.
 
-A number “N” is an Armstrong number if “N” is equal to the sum of all N’s digits raised to the power of the number of digits in N.
-
+Write a program to help students.
 */
 
 

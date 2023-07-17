@@ -15,34 +15,50 @@ Output: [1,2]
 
 using namespace std;
 
-void targetSum(int a[],int target,int n,int res[])
+// Function to find the indices of two elements in the array that sum up to the target.
+void targetSum(int a[], int target, int n, int res[])
 {
-    for(int i = 0 ; i < n - 1 ; i++){
-        for(int j = i + 1 ; j < n ; j++)
+    for (int i = 0; i < n - 1; i++)
+    {
+        for (int j = i + 1; j < n; j++)
         {
-            if(a[i] + a[j] == target){
-                res[0]=i;
-                res[1]=j;
-
+            // Check if the sum of elements at indices i and j is equal to the target.
+            if (a[i] + a[j] == target)
+            {
+                // Store the indices of the elements in the 'res' array.
+                res[0] = i;
+                res[1] = j;
+                return; // Return immediately after finding the indices.
             }
         }
     }
-
 }
 
 int main()
 {
-    int a[]= {2,7,11,15};
-
-    int n=sizeof(a)/sizeof(a[0]);
+    int a[] = {2, 7, 11, 15};
+    int n = sizeof(a) / sizeof(a[0]); // Calculate the size of the array 'a'.
 
     int target = 9;
-    int res[]={};
-    targetSum(a,target,n,res);
+    int res[2] = {}; // Create an array to store the indices of the elements that sum up to the target.
 
-    for(int i=0;i<2;i++){
-        cout<<res[i]<<" ";
+    targetSum(a, target, n, res); // Call the function to find the indices.
+
+    // Print the indices of the elements that sum up to the target.
+    for (int i = 0; i < 2; i++)
+    {
+        cout << res[i] << " ";
     }
 
     cout << '\n';
 }
+
+/*
+The given C++ code is a program to find the indices of two elements in an array that sum up to a given target value.
+
+In the targetSum function, two nested loops are used to iterate through all possible pairs of elements in the array a.
+The function takes the array a, target value target, and size of the array n as input parameters.
+
+For each pair of elements (a[i] and a[j]), the function checks if their sum is equal to the target.
+If a pair with the desired sum is found, the indices i and j are stored in the res array, and the function returns immediately.
+*/

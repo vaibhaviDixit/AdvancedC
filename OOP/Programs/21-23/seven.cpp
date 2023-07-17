@@ -1,5 +1,7 @@
 /*
-Write a C++ program to calculate the grade based on the percentage marks obtained using method overloading.
+Emma is a computer science teacher at a high school.
+She wants to develop a C++ program that calculates the grade for her students based on the percentage and marks they obtained in their exams.
+Emma has decided to use method overloading to implement the grading system. Write a cpp program to help Emma.
 
 Example:
 
@@ -59,3 +61,8 @@ int main()
 
     return 0;
 }
+
+/*
+above program calculates the grade of student based on both the percentage and marks obtained by student.
+*/
+

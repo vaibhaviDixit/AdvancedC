@@ -1,4 +1,6 @@
 /*
+The teacher has a list of exam scores (an array of integers) from a recent test.
+The scores need to be sorted in ascending order, from the lowest score to the highest score.
 Implement the bubble sort algorithm to sort an array of integers in ascending order.
 
 Input: 3 8 98 76 32 31
