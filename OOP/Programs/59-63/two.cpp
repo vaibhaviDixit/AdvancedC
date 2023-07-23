@@ -1,82 +1,78 @@
 /*
-Implement a base class "Shape" with two derived classes "Circle" and "Rectangle." \
-Create a class "Square" derived from both "Circle" and "Rectangle" to calculate and display the area and perimeter of a square.
+Create a program that manages animal information, including species and characteristics such as legs for mammals and
+flying ability for birds. Create a base class Animal Create two derived classed that inherit from Base as class Mammal and
+class Bird. Print Species and Legs for Mammals and print Species and Can fly for Birds.
+
+Input:
+Mammal lion("Lion", 4)
+
+Output:
+Species: Lion
+Legs: 4
+
+Input:
+Bird sparrow("Sparrow", true)
+
+Output:
+Species: Sparrow
+Can Fly: Yes
+
 */
 
 #include <iostream>
+using namespace std;
 
-// Base class Shape
-class Shape {
+class Animal {
 protected:
-    double area;
+    string species;
 
 public:
-    virtual void calculateArea() = 0;
-    virtual void display() const = 0;
-};
-
-// Derived class Circle
-class Circle : public Shape {
-private:
-    double radius;
-
-public:
-    Circle(double r) : radius(r) {}
-
-    void calculateArea() override {
-        area = 3.14159 * radius * radius;
-    }
-
-    void display() const override {
-        std::cout << "Circle Area: " << area << std::endl;
+    Animal(string sp) : species(sp) {}
+    void displaySpecies() {
+        cout << "Species: " << species << endl;
     }
 };
 
-// Derived class Rectangle
-class Rectangle : public Shape {
-private:
-    double length;
-    double width;
+class Mammal : public Animal {
+protected:
+    int legs;
 
 public:
-    Rectangle(double l, double w) : length(l), width(w) {}
-
-    void calculateArea() override {
-        area = length * width;
-    }
-
-    void display() const override {
-        std::cout << "Rectangle Area: " << area << std::endl;
+    Mammal(string sp, int lg) : Animal(sp), legs(lg) {}
+    void displayLegs() {
+        cout << "Legs: " << legs << endl;
     }
 };
 
-// Derived class Square
-class Square : public Circle, public Rectangle {
+class Bird : public Animal {
+protected:
+    bool canFly;
+
 public:
-    Square(double s) : Circle(s), Rectangle(s, s) {}
-
-    void calculateArea() override {
-        Circle::calculateArea();
-    }
-
-    void display() const override {
-        Circle::display();
+    Bird(string sp, bool fly) : Animal(sp), canFly(fly) {}
+    void displayFly() {
+        cout << "Can Fly: " << (canFly ? "Yes" : "No") << endl;
     }
 };
 
 int main() {
-    Square square(5.0);
-    square.calculateArea();
-    square.display();
+    Mammal lion("Lion", 4);
+    Bird sparrow("Sparrow", true);
+
+    lion.displaySpecies();
+    lion.displayLegs();
+
+    sparrow.displaySpecies();
+    sparrow.displayFly();
 
     return 0;
 }
 
 /*
-This program demonstrates the diamond inheritance problem, which occurs when a class inherits from two classes that have a common base class.
-The "Square" class is derived from both "Circle" and "Rectangle" classes, which, in turn, are derived from the "Shape" class.
-This causes ambiguity in accessing the "area" member.
-To resolve this ambiguity, we explicitly call the "calculateArea" and "display" functions of the "Circle" class within the "Square" class.
+This program demonstrates hierarchical inheritance with the animal kingdom. The Animal class contains information about
+the species of the animal.
+The Mammal and Bird classes inherit from Animal and provide additional information specific to mammals and birds.
 
 */
+
 

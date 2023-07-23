@@ -1,5 +1,6 @@
 /*
 Alice and Bob are participating in a coding competition. The challenge they are facing is to check whether a given string is a palindrome or not.
+Write a program to help them.
 
 Input: mom
 Output: mom is a palindrome.

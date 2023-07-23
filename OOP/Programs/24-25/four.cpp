@@ -1,5 +1,5 @@
 /*
-Write a CPP function to Increment each element of an integer array by 1
+Write a CPP function to Increment each element of an integer array by 1 by using pointer arithmetic operation.
 
 Input: {1, 2, 3, 4, 5}
 Output: Modified array: 2 3 4 5 6

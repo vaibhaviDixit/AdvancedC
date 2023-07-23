@@ -1,7 +1,15 @@
 /*
-Create a class called "DynamicArray" that uses dynamic memory allocation in its constructor to store
-an array of integers.
-Implement a function to display the array elements.
+You are a software developer working on an educational application.
+The application allows teachers to store and manage student scores for various assessments.
+To achieve this, you decide to create a class called "DynamicArray" that will dynamically store an array of integers representing
+the scores of students in a particular assessment.
+
+Input:
+Enter size of the array: 6
+Enter array elements: 34 67 43 55 60 64
+
+Output: Array elements: 34 67 43 55 60 64
+
 */
 
 #include <iostream>
@@ -16,8 +24,11 @@ public:
     DynamicArray(int arrSize) {
         size = arrSize;
         arr = new int[size];
+        std::cout<<"Enter array elements: ";
         for (int i = 0; i < size; i++) {
-            arr[i] = i + 1;
+            int k;
+            std::cin>>k;
+            arr[i] = k;
         }
     }
 
@@ -36,7 +47,10 @@ public:
 };
 
 int main() {
-    DynamicArray arrObj(5);
+    int s;
+    std::cout<<"Enter size of the array: ";
+    std::cin>>s;
+    DynamicArray arrObj(s);
     arrObj.displayArray();
     return 0;
 }

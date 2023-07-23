@@ -1,6 +1,15 @@
 /*
 Implement a base class Rectangle with attributes length and width and a method to calculate the area.
 Create a derived class Box from Rectangle with an additional height attribute and a method to calculate the volume of the box.
+
+Input:
+Enter the length of the box: 5
+Enter the width of the box: 3
+Enter the height of the box: 2
+
+Output:
+Box's Volume: 30
+
 */
 #include <iostream>
 

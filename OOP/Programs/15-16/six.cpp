@@ -1,5 +1,5 @@
 /*
-C++ program to check if two numbers are equal without using arithmetic operators comparison operators
+Create program to check if two numbers are equal without using arithmetic operators comparison operators
 
 Input: 5 5
 Output: x is equal to y

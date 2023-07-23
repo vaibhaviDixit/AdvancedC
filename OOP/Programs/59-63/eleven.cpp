@@ -1,5 +1,6 @@
 /*
-The given program demonstrates the concept of the "diamond problem" in C++ programming using multiple inheritance and virtual base class.
+Write a program that leads to ambiguity of the "diamond problem" in C++ programming using multiple inheritance
+and resolve ambiguity using virtual base class.
 
 */
 

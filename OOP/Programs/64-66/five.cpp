@@ -1,6 +1,11 @@
 /*
 Create a base class "Device" and two derived classes "Keyboard" and "Mouse."
-Implement a class "ComboDevice" that inherits from both "Keyboard" and "Mouse" and demonstrate function overriding with virtual base classes.
+Implement a class "ComboDevice" that inherits from both "Keyboard" and "Mouse" and perform function overriding with
+virtual base classes.
+
+ComboDevice combo;
+combo.type();// Output: Combo Device
+
 */
 
 #include <iostream>

@@ -1,6 +1,16 @@
 /*
-Create a class called "Box" with multiple constructors to initialize its dimensions.
-Display the volume of the box.
+You have been tasked with designing a C++ class called "Box" that represents a three-dimensional box.
+Your goal is to create a class with multiple constructors to initialize its dimensions and provide a method to display the volume of the box.
+
+Input: Box box1
+Output: Volume of box1: 0
+
+Input: box2(3, 4, 5)
+Output: Volume of box2: 60
+
+Input: Box box3(2)
+Output: Volume of box3: 8
+
 */
 
 #include <iostream>

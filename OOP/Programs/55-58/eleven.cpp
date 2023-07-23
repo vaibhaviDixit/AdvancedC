@@ -1,7 +1,15 @@
 /*
 Implement a base class "Shape" with a virtual function "display()" that displays "Shape."
 Implement two derived classes "Circle" and "Rectangle" that override the "display()" function to display "Circle" and "Rectangle," respectively.
-Demonstrate upcasting and downcasting with base class pointers.
+Perform upcasting and downcasting with base class pointers.
+
+
+Shape* shape1 = new Circle;
+shape1->display(); // Output: Circle
+
+Shape* shape2 = new Rectangle;
+shape2->display(); // Output: Rectangle
+
 */
 
 #include <iostream>

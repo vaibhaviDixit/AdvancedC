@@ -1,10 +1,16 @@
 /*
 Create a base class Shape with a method to calculate the area.
 Derive three classes Circle, Rectangle, and Triangle from Shape, and implement methods to calculate their respective areas.
+
+circle.calculateArea() // Circle's Area: 78.5
+rectangle.calculateArea() // Rectangle's Area: 24
+triangle.calculateArea() // Triangle's Area: 12
+
 */
 
 #include <iostream>
 #include <cmath>
+#define M_PI 3.14
 
 class Shape {
 public:
@@ -56,3 +62,7 @@ int main() {
 
     return 0;
 }
+
+
+
+

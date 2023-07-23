@@ -2,6 +2,13 @@
 Create a base class called Vehicle, and derive two classes Car and Bike from it.
 Implement a virtual function startEngine() in the Vehicle class.
 Override the startEngine() function in both Car and Bike classes to start their respective engines.
+
+Vehicle* vehicle1 = new Car();
+vehicle1->startEngine(); // Output: Car engine started.
+
+Vehicle* vehicle2 = new Bike();
+vehicle2->startEngine(); // Output: Bike engine started.
+
 */
 
 #include <iostream>

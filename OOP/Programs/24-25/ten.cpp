@@ -2,6 +2,7 @@
 In a school, the teacher wants to calculate the average test score of a group of students.
 The teacher has already collected the test scores of each student and stored them in an array.
 However, to save memory and improve performance, the teacher decides to use pointers to calculate the average instead of copying the entire array.
+Give a program to fulfill teacher's requirements.
 
 Input: 1, 2, 3, 4, 5
 Output: Average of array elements: 3

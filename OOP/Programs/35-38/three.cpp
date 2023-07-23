@@ -1,6 +1,18 @@
 /*
-Create a class Student with attributes name, rollNumber, and an array marks to store marks in five subjects.
+
+You are a software developer working on an educational management system for a school.
+The school administration wants to track the academic performance of their students efficiently.
+To accomplish this, you decide to create a C++ class named Student that will store essential information about each student,
+including their name, roll number, and marks in five different subjects.
 Implement methods to calculate the total and average marks of the student.
+
+
+Input: {90, 85, 78, 92, 88}
+
+Output:
+
+Total Marks: 433
+Average Marks: 86.6
 
 */
 
@@ -32,7 +44,7 @@ public:
 };
 
 int main() {
-    int marks[] = {90, 85, 78, 92, 88};
+    int marks[] = {50, 69, 75, 48, 88};
     Student student("Alice", 1001, marks);
     std::cout << "Total Marks: " << student.calculateTotal() << std::endl;
     std::cout << "Average Marks: " << student.calculateAverage() << std::endl;

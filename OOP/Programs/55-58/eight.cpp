@@ -1,6 +1,12 @@
 /*
 Create an abstract base class "Shape" with a pure virtual function "calculateArea()."
 Implement two derived classes "Circle" and "Rectangle" to calculate and display the area of a circle and rectangle, respectively.
+
+Input: Circle(5.0)
+Output: Area: 78.5397
+
+Input: Rectangle(4.0, 6.0)
+Output: Area: 24
 */
 
 #include <iostream>

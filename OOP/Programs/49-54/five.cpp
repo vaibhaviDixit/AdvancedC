@@ -1,5 +1,10 @@
 /*
-Implement a class representing a number and overload the unary '-' operator to negate the number.
+You have been assigned the task of implementing a C++ class that represents a special kind of number.
+Your task is to design and implement the class, along with overloading the unary '-' operator to handle the negation of this unique number.
+
+Input: 10
+Output: -10
+
 */
 
 #include <iostream>

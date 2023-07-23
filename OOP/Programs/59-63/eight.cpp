@@ -1,76 +1,75 @@
+
 /*
-Create a program to calculate the area of different geometric shapes.
-The program should support calculating the area of rectangles, circles, and triangles.
+Create a program that manages electronic devices, including information about brands, models, and sizes for smartwatches.
+
+Input:
+SmartWatch smartWatch("Apple", "Watch Series 6", "44mm");
+smartWatch.displayInfo();
+
+Output:
+Brand: Apple
+Model: Watch Series 6
+Size: 44mm
+
 */
 
 #include <iostream>
-#include <cmath>
 using namespace std;
 
-// Base class: Shape
-class Shape {
-public:
-    virtual double area() const = 0; // Pure virtual function to calculate the area
-};
-
-// Derived class: Rectangle (inherits from Shape)
-class Rectangle : public Shape {
+class ElectronicDevice {
 protected:
-    double width;
-    double height;
+    string brand;
 
 public:
-    Rectangle(double w, double h) : width(w), height(h) {}
-
-    double area()  {
-        return width * height;
+    ElectronicDevice(string bd) : brand(bd) {}
+    void displayBrand() {
+        cout << "Brand: " << brand << endl;
     }
 };
 
-// Derived class: Circle (inherits from Shape)
-class Circle : public Shape {
+class Phone : virtual public ElectronicDevice {
 protected:
-    double radius;
+    string model;
 
 public:
-    Circle(double r) : radius(r) {}
-
-    double area() {
-        return M_PI * pow(radius, 2);
+    Phone(string bd, string mdl) : ElectronicDevice(bd), model(mdl) {}
+    void displayModel() {
+        cout << "Model: " << model << endl;
     }
 };
 
-// Derived class: Triangle (inherits from Shape)
-class Triangle : public Shape {
+class Tablet : virtual public ElectronicDevice {
 protected:
-    double base;
-    double height;
+    string size;
 
 public:
-    Triangle(double b, double h) : base(b), height(h) {}
+    Tablet(string bd, string sz) : ElectronicDevice(bd), size(sz) {}
+    void displaySize() {
+        cout << "Size: " << size << endl;
+    }
+};
 
-    double area() const override {
-        return 0.5 * base * height;
+class SmartWatch : public Phone, public Tablet {
+public:
+    SmartWatch(string bd, string mdl, string sz) : ElectronicDevice(bd), Phone(bd, mdl), Tablet(bd, sz) {}
+    void displayInfo() {
+        displayBrand();
+        displayModel();
+        displaySize();
     }
 };
 
 int main() {
-    double width, height, radius, base, triHeight;
-
-    cout << "Enter the width and height of the rectangle: ";
-    cin >> width >> height;
-    Rectangle rectangle(width, height);
-    cout << "Area of the rectangle: " << rectangle.area() << endl;
-
-    cout << "Enter the radius of the circle: ";
-    cin >> radius;
-    Circle circle(radius);
-    cout << "Area of the circle: " << circle.area() << endl;
-
-    cout << "Enter the base and height of the triangle: ";
-    cin >> base >> triHeight;
-    Triangle triangle(base, triHeight);
-    cout << "Area of the triangle: " << triangle.area() << endl;
-
+    SmartWatch smartWatch("Apple", "Watch Series 6", "44mm");
+    smartWatch.displayInfo();
     return 0;
 }
+
+/*
+This program demonstrates hybrid inheritance with electronic devices.
+The ElectronicDevice class contains information about the brand of the device.
+The Phone and Tablet classes inherit virtually from ElectronicDevice and provide additional information specific to
+phones and tablets. The SmartWatch class inherits from both Phone and Tablet, creating a hybrid inheritance structure.
+
+*/
+

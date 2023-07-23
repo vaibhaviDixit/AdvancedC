@@ -1,6 +1,13 @@
 /*
-Create a class called "Cube" with a constructor that has default arguments to initialize its sides.
-Display the volume of the cube.
+Imagine you are a mathematician working on a geometry project. You need to calculate the volume of various cubes for your research.
+To simplify the process, you want to create a C++ class to represent a cube and calculate its volume.
+Give default size as 1 to cube.
+
+Input: side=blank value
+Output: Volume of cube1: 1
+
+Input: side=3
+Output: Volume of cube2: 27
 */
 
 #include <iostream>
@@ -22,7 +29,7 @@ public:
 
 int main() {
     Cube cube1; // Uses default argument, side = 1
-    Cube cube2(3);
+    Cube cube2(5);
     std::cout << "Volume of cube1: " << cube1.calculateVolume() << std::endl;
     std::cout << "Volume of cube2: " << cube2.calculateVolume() << std::endl;
     return 0;

@@ -1,5 +1,9 @@
 /*
-Create a class representing a point and overload the '>' operator to compare two points based on their distance from the origin.
+You are working on a navigation software development project for a cutting-edge autonomous vehicle.
+The vehicle's system relies on advanced algorithms to calculate and compare points in 2D space.
+As part of the development, you need to create a class that represents a 2D point and overload the > operator to compare two points based
+on their distance from the origin (0, 0).
+
 
 Input: p1(3, 4)
        p2(5, 12)
@@ -33,8 +37,8 @@ public:
 };
 
 int main() {
-    Point p1(3, 4);
-    Point p2(5, 12);
+    Point p1(1, 1);
+    Point p2(-3, 4);
 
     if (p1 > p2) {
         p1.display();

@@ -1,6 +1,13 @@
 /*
 Create a base class "Shape" with two derived classes "Circle" and "Rectangle."
-Implement functions to calculate the area of each shape and demonstrate the use of multiple inheritance.
+Implement functions to calculate the area of each shape by use of multiple inheritance.
+
+Circle circle(5.0)
+circle.calculateArea()  // Output: Circle Area: 78.5
+
+Rectangle rectangle(4.0, 6.0)
+rectangle.calculateArea() //Output: Rectangle Area: 24
+
 */
 
 #include <iostream>

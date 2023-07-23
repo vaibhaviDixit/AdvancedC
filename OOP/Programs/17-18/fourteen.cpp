@@ -3,8 +3,8 @@ In a mathematics class, the teacher challenges the students to find all Armstron
 An Armstrong number (also known as a narcissistic number) is a number that is equal to the sum of its own digits each raised to the power
 of the number of digits in the number.
 For example, 153 is an Armstrong number because 1^3 + 5^3 + 3^3 = 153.
-
 Write a program to help students.
+
 */
 
 

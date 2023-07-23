@@ -1,5 +1,15 @@
 /*
-Create a class representing an array and overload the '[]' operator to access array elements.
+You have been tasked with creating a grocery list manager program for a local supermarket.
+The program should allow users to create and manipulate their grocery lists efficiently.
+To achieve this, you need to create a class called GroceryList representing an array, and overload the '[]' operator
+to enable easy access to array elements.
+
+Input:
+sugar rice oil bread salt
+
+Output:
+sugar rice oil bread salt
+
 */
 
 #include <iostream>
@@ -11,17 +21,17 @@ const int SIZE = 5;
 
 class MyArray {
 private:
-    int arr[SIZE];
+    string arr[SIZE];
 
 public:
     MyArray() {
         for (int i = 0; i < SIZE; i++) {
-            arr[i] = i + 1;
+            cin>>arr[i];
         }
     }
 
     // Overloading the array index '[]' operator
-    int& operator[](int index) {
+    string& operator[](int index) {
         if (index < 0 || index >= SIZE) {
             cout << "Index out of range." << endl;
             exit(1);
@@ -43,7 +53,7 @@ int main() {
     cout << "Original Array: ";
     arr.display();
 
-    arr[2] = 10; // Change element at index 2
+    arr[2] ="Tea" ; // Change element at index 2
     cout << "Modified Array: ";
     arr.display();
 

@@ -1,10 +1,18 @@
 /*
 Implement a base class "Shape" with two derived classes "Circle" and "Rectangle."
 Calculate and display the area of a circle and rectangle using single inheritance.
+
+Input: Circle circle(5.0)
+Output:Area of Circle: 78.5
+
+Input: Rectangle rectangle(4.0, 6.0)
+Output: Area of Rectangle: 24
+
 */
 
 #include <iostream>
 #include <cmath>
+#define M_PI 3.14
 
 // Base class
 class Shape {

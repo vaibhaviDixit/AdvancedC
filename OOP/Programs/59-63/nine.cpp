@@ -1,41 +1,55 @@
 /*
-Create a base class "Shape" with two derived classes "Circle" and "Triangle."
-Implement an abstract class "Drawing" with pure virtual functions to draw shapes and demonstrate the use of multiple inheritance.
+ Create a program that manages vehicle information, including the make, model, and engine horsepower for cars.
+
+Car car("Toyota", "Camry", 200);
+car.displayInfo(); // Make: Toyota, Model: Camry
+car.displayHorsepower(); // Horsepower: 200 HP
+
 */
 
 #include <iostream>
 using namespace std;
 
-class Shape {
-public:
-    virtual void draw() const = 0; // Pure virtual function
-};
+class Vehicle {
+protected:
+    string make;
+    string model;
 
-class Circle : public Shape {
 public:
-    void draw() {
-        cout << "Drawing a Circle" << endl;
+    Vehicle(string mk, string mdl) : make(mk), model(mdl) {}
+    void displayInfo() {
+        cout << "Make: " << make << ", Model: " << model << endl;
     }
 };
 
-class Triangle : public Shape {
+class Engine {
+protected:
+    double horsepower;
+
 public:
-    void draw() {
-        cout << "Drawing a Triangle" << endl;
+    Engine(double hp) : horsepower(hp) {}
+    void displayHorsepower() {
+        cout << "Horsepower: " << horsepower << " HP" << endl;
     }
 };
 
-class Drawing : public Circle, public Triangle {
+class Car : public Vehicle, public Engine {
 public:
-    // Must implement draw() due to multiple inheritance
-    void draw() {
-        cout << "Drawing using Drawing class" << endl;
-    }
+    Car(string mk, string mdl, double hp) : Vehicle(mk, mdl), Engine(hp) {}
 };
 
 int main() {
-    Drawing drawing;
-    drawing.draw();
-
+    Car car("Toyota", "Camry", 200);
+    car.displayInfo();
+    car.displayHorsepower();
     return 0;
 }
+
+
+/*
+This program demonstrates hybrid inheritance with a vehicle management system.
+The Vehicle class contains information about the make and model of the vehicle.
+The Engine class contains information about the horsepower of the engine.
+The Car class inherits from both Vehicle and Engine, creating a hybrid inheritance structure.
+
+*/

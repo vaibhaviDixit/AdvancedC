@@ -1,5 +1,5 @@
 /*
- C++ program to find maximum and minimum of two numbers without using loop and any condition.
+ Write a program to find maximum and minimum of two numbers without using loop and any condition.
 
 Input: 17 19
 Output: max = 19

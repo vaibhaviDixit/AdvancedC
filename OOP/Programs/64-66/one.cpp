@@ -1,7 +1,15 @@
 /*
  Create a base class "A" with two derived classes "B" and "C."
- Implement a class "D" that inherits from both "B" and "C," and demonstrate how to call base
+ Implement a class "D" that inherits from both "B" and "C," and call base
  class constructors during multiple inheritance
+
+ Input: D obj;
+ Output:
+    A's Constructor
+    B's Constructor
+    C's Constructor
+    D's Constructor
+
 */
 
 #include <iostream>

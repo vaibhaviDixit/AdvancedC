@@ -2,6 +2,15 @@
 Implement a base class "Person" with two derived classes "Employee" and "Student."
 Create another class "Graduate" derived from "Employee" and "Student."
 Add a function "display()" to all classes, including "Graduate," to show their details.
+
+Input:
+Graduate graduate("John Doe", 12345, 98765)
+Output:
+Name: John Doe
+Employee ID: 12345
+Name: John Doe
+Student ID: 98765
+
 */
 
 #include <iostream>

@@ -1,5 +1,5 @@
 /*
-Program to find the sum of elements above and below the main diagonal of a matrix
+You are tasked to write a Program to find the sum of elements above and below the main diagonal of a matrix
 
 Input: {{1, 2, 3},
         {4, 5, 6},

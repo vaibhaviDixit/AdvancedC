@@ -1,6 +1,14 @@
 /*
-Create a class "Temperature" to represent temperature in Celsius.
-Implement an explicit constructor to convert Celsius to Fahrenheit.
+Imagine you are working on a weather monitoring system for a meteorological station, and you need to create a
+C++ program to handle temperature conversions. You want to design a class called Temperature to represent temperature
+in Celsius and provide a method to convert Celsius to Fahrenheit.
+
+Input: 25.5
+Output:
+Temperature in Celsius: 25.5
+Temperature in Fahrenheit: 77.9
+
+
 */
 
 #include <iostream>
@@ -25,7 +33,7 @@ public:
 };
 
 int main() {
-    Temperature tempCelsius(25.5);
+    Temperature tempCelsius(35.48);
     std::cout << "Temperature in Celsius: " << tempCelsius.getCelsius() << std::endl;
     std::cout << "Temperature in Fahrenheit: " << tempCelsius.getFahrenheit() << std::endl;
     return 0;

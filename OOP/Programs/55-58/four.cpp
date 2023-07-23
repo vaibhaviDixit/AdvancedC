@@ -2,6 +2,16 @@
 Implement a base class "Person" with two derived classes "Employee" and "Student."
 Create another class "Faculty" that is derived from both "Employee" and "Student."
 Display the details of a faculty member, including their name, employee ID, and student ID.
+
+
+Input:
+Faculty faculty("John Doe", 12345, 98765)
+Output:
+Name: John Doe
+Employee ID: 12345
+Name: John Doe
+Student ID: 98765
+
 */
 
 #include <iostream>

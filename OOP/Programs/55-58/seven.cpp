@@ -1,6 +1,13 @@
 /*
  Implement a base class "Vehicle" with two derived classes "Car" and "Bike."
  Add a virtual function "start()" in the base class and override it in the derived classes to display their respective starting messages.
+
+ Input: Car.start()
+ Output: Car starting...
+
+ Input: Bike.start()
+ Output: Bike starting...
+
 */
 
 

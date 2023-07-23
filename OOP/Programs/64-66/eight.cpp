@@ -1,61 +1,50 @@
 /*
-Create a C++ program to calculate the salary of employees.
-Implement a base class called Employee with a virtual function calculateSalary(), which returns the basic salary.
-Create two types of employees, FullTimeEmployee and PartTimeEmployee, that override the calculateSalary() method to
-calculate the salary based on their working hours.
+Create one Base class and derive Derived class from it. Add default and parameterized constructors
+in both classes. Pass Arguments to constructor and monitor it.
+
+Input: Derived d(25, 15)
+Output: Param of Base 25
+        Param of Derived 15
+
 */
 
 #include <iostream>
-
-class Employee {
-protected:
-    double basicSalary;
-public:
-    Employee(double salary) : basicSalary(salary) {}
-
-    virtual double calculateSalary() const {
-        return basicSalary;
-    }
+using namespace std;
+class Base
+{
+    public:
+        Base ()
+        {
+            cout << "Default of Base" << endl;
+        }
+        Base (int x)
+        {
+            cout << "Param of Base " << x << endl;
+        }
 };
 
-class FullTimeEmployee : public Employee {
-private:
-    double bonus;
-public:
-    FullTimeEmployee(double salary, double b) : Employee(salary), bonus(b) {}
-
-    double calculateSalary()  {
-        return basicSalary + bonus;
-    }
+class Derived : public Base
+{
+    public:
+        Derived ()
+        {
+            cout << "Default of Derived" << endl;
+        }
+        Derived (int a)
+        {
+            cout << "Param of Derived : " << a << endl;
+        }
+        Derived(int x, int a) : Base(x)
+        {
+         cout << "Param of Derived " << a;
+        }
 };
 
-class PartTimeEmployee : public Employee {
-private:
-    int hoursWorked;
-public:
-    PartTimeEmployee(double salary, int hours) : Employee(salary), hoursWorked(hours) {}
-
-    double calculateSalary() {
-        return basicSalary * hoursWorked;
-    }
-};
-
-int main() {
-    Employee* fullTimeEmp = new FullTimeEmployee(5000, 1000);
-    Employee* partTimeEmp = new PartTimeEmployee(50, 30);
-
-    std::cout << "Full-Time Employee Salary: " << fullTimeEmp->calculateSalary() << std::endl;
-    std::cout << "Part-Time Employee Salary: " << partTimeEmp->calculateSalary() << std::endl;
-
-    delete fullTimeEmp;
-    delete partTimeEmp;
-
-    return 0;
+int main()
+{
+    Derived d(25, 15);
 }
 /*
-In this program, we create an Employee base class with a virtual function calculateSalary().
-Then, we create two derived classes FullTimeEmployee and PartTimeEmployee, each of which overrides the calculateSalary()
-method to calculate the salary based on their working conditions.
-
+In above cpp program we have Base and Derived class with single inheritance.
+We have passed arguments to Derived class. Derived class passed argument of Base to it.
 */
-

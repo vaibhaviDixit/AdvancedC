@@ -1,5 +1,7 @@
 /*
-Create a C++ program to calculate the average grade of a student using friend functions and handle constant objects properly.
+Imagine you are a teacher at a school, and you need to calculate the average grade of a student based on their exam scores.
+You want to create a C++ program to handle this task. Each student has multiple subjects, and the average grade will be calculated
+as the sum of the grades divided by the total number of subjects.
 
 Input: {80, 90, 85, 95, 70}
 Output: Average grade of student: 84
@@ -38,7 +40,7 @@ double calculateAverageGrade(const Student& stu) {
 }
 
 int main() {
-    const int gradesArray[] = {80, 90, 85, 95, 70};
+    const int gradesArray[] = {81, 92, 75, 85, 79};
     const Student stu1("Alice", gradesArray, 5);
 
     double averageGrade = calculateAverageGrade(stu1);

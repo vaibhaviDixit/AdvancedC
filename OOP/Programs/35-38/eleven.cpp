@@ -1,7 +1,12 @@
 /*
-   Create a class 'Fraction' with attributes 'numerator' and 'denominator'.
-   Implement functions to add two fractions and display the result in simplified form.
-   Use objects to demonstrate fraction addition.
+   Alice is one baker who is making pastries. She wants precise measurements of fractions. She wants to add measurement of two pastries.
+   Create a class 'Fraction' with attributes 'numerator' and 'denominator'.Implement functions to add two fractions and display the
+   result in simplified form to help Alice.
+
+   Input: frac1(3, 5)
+          frac2(2, 7)
+   Output: Fraction: 31/35
+
 */
 
 #include <iostream>
@@ -43,8 +48,8 @@ public:
 };
 
 int main() {
-    Fraction frac1(3, 5);
-    Fraction frac2(2, 7);
+    Fraction frac1(5, 8);
+    Fraction frac2(2, 4);
 
     frac1.add(frac2);
     frac1.display();

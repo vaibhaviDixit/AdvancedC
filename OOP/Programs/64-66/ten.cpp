@@ -2,6 +2,13 @@
 Create a base class called Person, and derive two classes Student and Teacher from it.
 Implement a virtual function introduce() in the Person class, which prints "I am a person."
 Override the introduce() function in both Student and Teacher classes to print their roles and names.
+
+Person* person1 = new Student("Alice");
+person1->introduce(); // Output: I am a student named Alice.
+
+Person* person2 = new Teacher("Mr. Smith");
+person2->introduce(); // Output: I am a teacher named Mr. Smith.
+
 */
 
 #include <iostream>

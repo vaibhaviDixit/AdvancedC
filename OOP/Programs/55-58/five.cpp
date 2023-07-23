@@ -2,6 +2,16 @@
 Implement a base class "Animal" with two derived classes "Mammal" and "Bird."
 Add a function "sound()" to the "Animal" class that displays "Unknown sound." Override the "sound()" function in both "Mammal"
 and "Bird" to display their respective sounds.
+
+Input:
+Animal.sound()
+Mammal.sound()
+Bird.sound()
+Output:
+Unknown sound
+Mammal sound: Roar
+Bird sound: Chirp
+
 */
 
 #include <iostream>

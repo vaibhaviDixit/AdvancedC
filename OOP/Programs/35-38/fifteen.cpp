@@ -1,8 +1,14 @@
-/* Problem Statement:
-   Create a class 'Rectangle' with attributes 'x', 'y' (coordinates of the top-left corner),
-   'width', and 'height'.
+/*
+   Create a class 'Rectangle' with attributes 'x', 'y' (coordinates of the top-left corner),'width', and 'height'.
    Implement a function to check if two rectangles intersect.
    Use objects to demonstrate rectangle intersection for two rectangles.
+
+
+   Input: rect1(0, 0, 4, 3)
+          rect2(2, 2, 5, 3)
+
+   Output: Rectangles intersect.
+
 */
 
 #include <iostream>
@@ -29,8 +35,8 @@ public:
 };
 
 int main() {
-    Rectangle rect1(0, 0, 4, 3);
-    Rectangle rect2(2, 2, 5, 3);
+    Rectangle rect1(1, 4, 6, 4);
+    Rectangle rect2(3, 5, 6, 4);
 
     if (rect1.intersect(rect2))
         std::cout << "Rectangles intersect.\n";

@@ -1,6 +1,22 @@
 /*
 Implement a class hierarchy with base class "Base" and derived classes "A" and "B."
-Demonstrate the use of virtual destructors to ensure proper cleanup during multiple inheritance.
+Make use of virtual destructors to ensure proper cleanup during multiple inheritance.
+
+
+Input:
+Base* obj = new D();
+delete obj;
+
+Output:
+Base Constructor
+A's Constructor
+B's Constructor
+D's Constructor
+D's Destructor
+B's Destructor
+A's Destructor
+Base Destructor
+
 */
 
 #include <iostream>

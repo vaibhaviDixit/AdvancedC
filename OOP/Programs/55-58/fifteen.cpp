@@ -1,6 +1,21 @@
 /*
 Create a base class Calculator with methods for addition and subtraction.
 Derive a class ScientificCalculator from Calculator and add methods for multiplication and division.
+
+Input:
+ScientificCalculator sc;
+a = 10, b = 3
+sc.add(a, b)
+sc.subtract(a, b)
+sc.multiply(a, b)
+sc.divide(a, b)
+
+Output:
+Addition: 13
+Subtraction: 7
+Multiplication: 30
+Division: 3
+
 */
 
 #include <iostream>

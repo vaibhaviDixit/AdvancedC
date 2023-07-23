@@ -1,6 +1,6 @@
 /*
 Create a base class "Base" and two derived classes "A" and "B."
-Implement a class "C" that inherits from both "A" and "B," and demonstrate dynamic memory allocation
+Implement a class "C" that inherits from both "A" and "B," and do dynamic memory allocation
 with virtual base classes.
 */
 

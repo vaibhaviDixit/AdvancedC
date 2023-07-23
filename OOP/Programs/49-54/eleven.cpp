@@ -1,5 +1,22 @@
 /*
- Create a class representing a date and overload the '==' and '!=' operators to compare two dates.
+Imagine you are a software developer working on a project called "The Romantic Date Planner."
+The application aims to assist couples in planning and organizing memorable dates. As part of the project, you need to create a
+class that represents a date, allowing users to compare different dates easily.
+
+Your task is to develop a C++ class called "Date" that will be the cornerstone of the Romantic Date Planner application.
+The "Date" class should have the ability to compare two dates using the '==' and '!=' operators.
+The application will use these operators to determine whether two dates are the same or different, respectively.
+
+Input:  d1(15, 7, 2023)
+        d2(15, 7, 2023)
+Output: d1 and d2 are the same dates.
+
+Input:  d1(15, 7, 2023)
+        d2(5, 4, 2021)
+Output: d1 and d2 are different dates.
+
+
+
 */
 
 #include <iostream>

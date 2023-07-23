@@ -3,6 +3,15 @@ Create a base class "Vehicle" with a derived class "Car" and another derived cla
 Implement the "Vehicle" class to store the vehicle's name and display it.
 The "Car" class should store the car's model and display it.
 The "SportsCar" class should store the top speed of the sports car and display it.
+
+Input:
+SportsCar myCar("Ferrari", "F430", 320);
+myCar.display();
+Output:
+Vehicle Name: Ferrari
+Car Model: F430
+Top Speed: 320 km/h
+
 */
 
 #include <iostream>

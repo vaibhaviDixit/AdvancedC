@@ -1,7 +1,11 @@
 /*
-   Create a class 'Time' with attributes 'hours', 'minutes', and 'seconds'.
-   Implement functions to add and display time.
-   Use objects to demonstrate time addition.
+   You work at a space research center where precise timing is crucial for coordinating space missions.
+   The scientists and engineers often need to perform time calculations to synchronize mission events accurately.
+   To help them with their tasks, you decide to create a class named 'Time' that will handle time-related addition.
+
+   Input: t1(h=2, m=30, s=45)
+          t2(h=1, m=45, s=15)
+   Output: Time: 4h 16m 0s
 */
 
 #include <iostream>
@@ -36,8 +40,8 @@ public:
 };
 
 int main() {
-    Time t1(2, 30, 45);
-    Time t2(1, 45, 15);
+    Time t1(5, 15, 60);
+    Time t2(2, 45, 5);
 
     t1.addTime(t2);
     t1.displayTime();

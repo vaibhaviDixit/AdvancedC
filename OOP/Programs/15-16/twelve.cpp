@@ -1,5 +1,5 @@
 /*
-Convert temperature from Fahrenheit to Celsius
+As a part of conversion calculator you are tasked to Convert temperature from Fahrenheit to Celsius
 
 Input: 75.0
 Output: The temperature in Celsius is: 23.8889

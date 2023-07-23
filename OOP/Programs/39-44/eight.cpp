@@ -1,5 +1,8 @@
 /*
- Create a C++ program to calculate the distance between two points using friend functions and handle constant objects properly.
+Imagine you are a software developer working on a project for a travel agency.
+The agency wants to offer a new feature that allows users to calculate the distance between two cities using their
+geographical coordinates.
+As the lead programmer, you decide to create a C++ program to accomplish this task.
 
  Input: p1(2.0, 3.0)
         p2(5.0, 7.0)
@@ -27,8 +30,8 @@ double calculateDistance(const Point& p1, const Point& p2) {
 }
 
 int main() {
-    const Point p1(2.0, 3.0);
-    const Point p2(5.0, 7.0);
+    const Point p1(2.3, 1.2);
+    const Point p2(3.1, 4.2);
     double distance = calculateDistance(p1, p2);
 
     std::cout << "Distance between two points: " << distance << std::endl;

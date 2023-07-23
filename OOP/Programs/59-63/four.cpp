@@ -1,6 +1,13 @@
 /*
 Create a base class "Person" with two derived classes "Student" and "Employee."
-Implement functions to display details of students and employees, and demonstrate the use of multiple inheritance.
+Implement functions to display details of students and employees by use of multiple inheritance.
+
+Student student("John Doe", 12345)
+student.displayDetails() // Name: John Doe, Roll Number: 12345
+
+Employee employee("Jane Smith", "E789")
+employee.displayDetails() // Name: Jane Smith, Employee ID: E789
+
 */
 
 #include <iostream>

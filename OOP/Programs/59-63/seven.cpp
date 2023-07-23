@@ -1,6 +1,13 @@
 /*
  Implement a base class "Base" and two derived classes "A" and "B."
- Add a static member variable to "Base" and demonstrate its use in "A" and "B."
+ Add a static member variable to "Base" and use it in "A" and "B."
+
+    Base::staticVar // Output:Static Variable Value: 0
+    A objA1;
+    A objA2;
+    B objB1;
+    B objB2;
+    Base::staticVar // Output:Static Variable Value: 4
 
 */
 

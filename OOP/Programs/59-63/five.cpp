@@ -1,6 +1,10 @@
 /*
 Create a base class "Animal" and two derived classes "FlyingAnimal" and "SwimmingAnimal."
-Implement a class "Bird" that inherits from both "FlyingAnimal" and "Animal" to demonstrate virtual base classes.
+Implement a class "Bird" that inherits from both "FlyingAnimal" and "Animal" by using virtual base classes.
+
+Input: Bird parrot("Duck")
+Output: Duck can fly. Duck can swim.
+
 */
 
 #include <iostream>
@@ -41,7 +45,7 @@ public:
 };
 
 int main() {
-    Bird parrot("Parrot");
+    Bird parrot("Duck");
     parrot.fly();
     parrot.swim();
 
