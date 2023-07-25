@@ -43,13 +43,13 @@ int main() {
     cout << endl;
 
     // Example 2: Perform element-wise addition of two double arrays.
-    double doubleArr1[] = {1.1, 2.2, 3.3};
-    double doubleArr2[] = {0.5, 0.6, 0.7};
-    double doubleResult[3];
-    arrayElementWiseAddition<double, 3>(doubleArr1, doubleArr2, doubleResult);
+    char charArr1[] = {'a', 'b', 'c'};
+    char charArr2[] = {'.', '#', '@'};
+    char charResult[3];
+    arrayElementWiseAddition<char, 3>(charArr1, charArr2, charResult);
     cout << "Result: ";
     for (int i = 0; i < 3; i++) {
-        cout << doubleResult[i] << " ";   // Output: Result: 1.6 2.8 4
+        cout << charResult[i] << " ";   // Result: Å à ú
     }
     cout << endl;
     return 0;

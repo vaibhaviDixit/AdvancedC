@@ -7,6 +7,14 @@ Input:  Widget* widget = new Button(100, 50, "Click Me!");
         widget->draw();
 Output: Drawing a button with label "Click Me!" at (100, 50)
 
+Input: Widget* widget2 = new Widget(140, 250);
+       widget2->draw();
+Output: Drawing a generic widget at (140, 250)
+
+Input:  Widget* widget = new Button(200, 250, "Subscribe!");
+        widget->draw();
+Output: Drawing a button with label "Subscribe!" at (200, 250)
+
 */
 
 
@@ -46,6 +54,10 @@ int main() {
     // When we call the draw method on the base class pointer, the virtual function
     // will be dispatched to the appropriate version based on the actual object type.
     widget->draw();
+
+    Widget* widget2 = new Widget(140, 250);
+    widget2->draw(); // Output: Drawing a generic widget at (140, 250)
+
 
     delete widget;
     return 0;
