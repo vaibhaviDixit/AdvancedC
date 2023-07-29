@@ -19,7 +19,7 @@ int rangeSum(int prefix[], int left, int right) {
 }
 
 int main() {
-    int arr[] = {1, 2, 3, 4, 5};
+    int arr[] = {-3,6,-7,8};
     int size = sizeof(arr) / sizeof(arr[0]);
     int prefix[MAX_SIZE];
 
@@ -30,8 +30,8 @@ int main() {
         prefix[i] = prefix[i - 1] + arr[i];
     }
 
-    int left = 1;  // Range start index
-    int right = 3; // Range end index
+    int left = 0;  // Range start index
+    int right = 2; // Range end index
 
     int sum = rangeSum(prefix, left, right);
     printf("Sum of elements from index %d to %d: %d\n", left, right, sum);

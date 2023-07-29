@@ -49,8 +49,8 @@ bool checkPermutation(char* s1, char* s2) {
 }
 
 int main() {
-    char s1[] = "ab";
-    char s2[] = "eidbaooo";
+    char s1[] = "ring";
+    char s2[] = "night";
 
     bool result = checkPermutation(s1, s2);
     printf("s2 contains a permutation of s1: %s\n", (result) ? "true" : "false");

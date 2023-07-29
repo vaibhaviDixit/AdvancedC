@@ -26,7 +26,7 @@ int findMostFrequent(int arr[], int size) {
 }
 
 int main() {
-    int arr[] = {1, 2, 3, 4, 2, 3, 1, 2, 4, 4};
+    int arr[] = {11,22,33,44,22,77,32,22};
     int size = sizeof(arr) / sizeof(arr[0]);
 
     int mostFrequent = findMostFrequent(arr, size);

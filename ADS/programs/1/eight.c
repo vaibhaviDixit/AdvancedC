@@ -47,7 +47,7 @@ int findLongestMountain(int arr[], int n) {
 }
 
 int main() {
-    int arr[] = {2, 3, 4, 5, 2, 1, 0};
+    int arr[] = {2, 3, 4, 5};
     int n = sizeof(arr) / sizeof(arr[0]);
 
     int longestMountainLength = findLongestMountain(arr, n);
@@ -55,6 +55,7 @@ int main() {
 
     return 0;
 }
+
 /*
 The given C program finds the length of the longest subarray that forms a mountain pattern in an array of integers.
 A mountain pattern is a sequence of integers where there is an increasing sequence of numbers followed by a decreasing sequence

@@ -22,7 +22,7 @@ void prefixSum(int arr[], int prefix[], int size) {
 }
 
 int main() {
-    int arr[] = {1, 2, 3, 4, 5};
+    int arr[] = {2,5,7,3,2,1};
     int size = sizeof(arr) / sizeof(arr[0]);
     int prefix[MAX_SIZE];
 
