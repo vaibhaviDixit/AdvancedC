@@ -1,5 +1,6 @@
 /*
-Write a PL/SQL program to create Package with a function to get the total salary of all employees in a specific department
+Write a PL/SQL program to create Package with a function to get the total salary of all employees in a specific 
+department
 */
 
 -- Create the "employee" table

@@ -1,5 +1,6 @@
 /*
-Write a PL/SQL program that create Trigger to update the "salary" of an employee to 80000 if the "department" is changed to 'Management'
+Write a PL/SQL program that create Trigger to update the "salary" of an employee to 80000 if the "department" is 
+changed to 'Management'
 
 */
 

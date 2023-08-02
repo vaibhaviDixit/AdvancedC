@@ -1,5 +1,6 @@
 /*
-Write a PL/SQL program that create Trigger to enforce a unique constraint on the combination of "first_name" and "last_name"
+Write a PL/SQL program that create Trigger to enforce a unique constraint on the combination of "first_name" and 
+"last_name"
 */
 
 -- Create the "employee" table
