@@ -8,9 +8,8 @@ Output: Number of inversions: 5
 
 */
 
-// C program to demonstrate the Merge Sort algorithm with inversion count.
-
-#include <stdio.h>
+#include <iostream>
+using namespace std;
 
 // Merge Function (same as used in Merge Sort)
 // This function takes an array 'arr', a temporary array 'temp', and the indices 'left', 'mid', and 'right'.
@@ -73,7 +72,7 @@ long long int mergeSort(int arr[], int temp[], int left, int right) {
 
 int main() {
     // Sample array
-    int arr[] = {1, 20, 6, 4, 5};
+    int arr[] = {8,4,2,1};
 
     // Calculate the size of the array
     int n = sizeof(arr) / sizeof(arr[0]);
@@ -82,15 +81,15 @@ int main() {
     int temp[n];
 
     // Print the given array
-    printf("Given array: ");
+    cout << "Given array: ";
     for (int i = 0; i < n; i++)
-        printf("%d ", arr[i]);
+        cout << arr[i] << " ";
 
     // Call the Merge Sort function with inversion count to sort the array and count inversions
     long long int inversions = mergeSort(arr, temp, 0, n - 1);
 
     // Print the number of inversions in the array
-    printf("\nNumber of inversions: %lld", inversions);
+    cout << "\nNumber of inversions: " << inversions;
 
     return 0;
 }

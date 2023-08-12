@@ -7,7 +7,8 @@ Output: [0, 0, 0, 1, 1, 1, 2, 2]
 
 */
 
-#include <stdio.h>
+#include <iostream>
+using namespace std;
 
 // Dutch National Flag Algorithm
 // This function takes an array 'arr' and its size 'n' as input.
@@ -24,7 +25,7 @@ void sortColors(int arr[], int n) {
 
     while (mid <= high) {
         switch (arr[mid]) {
-            case 0:{
+            case 0: {
                 // If the element at 'mid' is 0, swap it with the element at 'low'.
                 // Move 'low' and 'mid' one step forward.
                 temp = arr[low];
@@ -34,12 +35,12 @@ void sortColors(int arr[], int n) {
                 mid++;
                 break;
             }
-            case 1:{
+            case 1: {
                 // If the element at 'mid' is 1, move 'mid' one step forward.
                 mid++;
                 break;
             }
-            case 2:{
+            case 2: {
                 // If the element at 'mid' is 2, swap it with the element at 'high'.
                 // Move 'high' one step backward.
                 temp = arr[mid];
@@ -54,23 +55,23 @@ void sortColors(int arr[], int n) {
 
 int main() {
     // Sample array of colors represented as integers (0, 1, or 2)
-    int arr[] = {0,1,2,1,2,0};
+    int arr[] = {0, 1, 2, 1, 2, 0};
 
     // Calculate the size of the array
     int n = sizeof(arr) / sizeof(arr[0]);
 
     // Print the unsorted array
-    printf("Unsorted array: ");
+    cout << "Unsorted array: ";
     for (int i = 0; i < n; i++)
-        printf("%d ", arr[i]);
+        cout << arr[i] << " ";
 
     // Call the sortColors function to sort the array in-place
     sortColors(arr, n);
 
     // Print the sorted array
-    printf("\nSorted array: ");
+    cout << "\nSorted array: ";
     for (int i = 0; i < n; i++)
-        printf("%d ", arr[i]);
+        cout << arr[i] << " ";
 
     return 0;
 }

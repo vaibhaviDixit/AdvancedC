@@ -1,0 +1,95 @@
+/*
+Given a maze with obstacles represented by 0, find a path for a robot to reach its destination from the top-left cell to the bottom-right cell.
+The robot can only move down or right.
+
+Input:
+        {1, 0, 0, 0}
+        {1, 1, 0, 1}
+        {0, 1, 0, 0}
+        {1, 1, 1, 1}
+
+Output:
+Path exists. Solution:
+1 0 0 0
+1 1 0 0
+0 1 0 0
+0 1 1 1
+
+*/
+
+// Code for Solving Maze with Obstacles
+
+#include <iostream>
+#include <vector>
+
+using namespace std;
+
+const int N = 4; // Size of the maze
+
+bool isSafe(int maze[N][N], int x, int y) {
+    return (x >= 0 && x < N && y >= 0 && y < N && maze[x][y] == 1);
+}
+
+bool solveMazeUtil(int maze[N][N], int x, int y, vector<vector<int>>& path) {
+    if (x == N - 1 && y == N - 1) {
+        path[x][y] = 1;
+        return true;
+    }
+
+    if (isSafe(maze, x, y)) {
+        path[x][y] = 1;
+
+        if (solveMazeUtil(maze, x + 1, y, path))
+            return true;
+
+        if (solveMazeUtil(maze, x, y + 1, path))
+            return true;
+
+        path[x][y] = 0; // Backtrack if no valid path found
+    }
+
+    return false;
+}
+
+void printSolution(const vector<vector<int>>& path) {
+    for (int i = 0; i < N; i++) {
+        for (int j = 0; j < N; j++) {
+            cout << path[i][j] << " ";
+        }
+        cout << endl;
+    }
+}
+
+void solveMaze(int maze[N][N]) {
+    vector<vector<int>> path(N, vector<int>(N, 0));
+
+    if (solveMazeUtil(maze, 0, 0, path)) {
+        cout << "Path exists. Solution:\n";
+        printSolution(path);
+    } else {
+        cout << "No path exists.";
+    }
+}
+
+int main() {
+    int maze[N][N] = {
+        {1, 0, 0, 0},
+        {1, 1, 0, 1},
+        {0, 1, 0, 0},
+        {1, 1, 1, 1}
+    };
+
+    solveMaze(maze);
+
+    return 0;
+}
+
+/*
+The Solve Maze with Obstacles program is similar to the Rat in a Maze program, but here, we consider obstacles represented by 0's in the maze.
+The isSafe function checks if the current cell is a valid path (1) and the solveMazeUtil function explores all possible paths, moving down
+or right. The program prints the final path from the top-left cell to the bottom-right cell if it exists, and displays a message if no valid
+path is found.
+
+*/
+
+
