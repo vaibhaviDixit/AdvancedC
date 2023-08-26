@@ -65,7 +65,7 @@ void printArray(int arr[], int n)
 
 int main()
 {
-	int arr[] = { 60 ,20 ,40 ,70, 30, 10};
+	int arr[] = {30,60,65,100};
 	int n = sizeof(arr) / sizeof(arr[0]);
 
 	for(int i=n/2 -1;i>=0;i--){

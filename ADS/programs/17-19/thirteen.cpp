@@ -57,9 +57,9 @@ int ladderLength(string beginWord, string endWord, vector<string>& wordList) {
 }
 
 int main() {
-    string beginWord = "hit";
-    string endWord = "cog";
-    vector<string> wordList = {"hot", "dot", "dog", "lot", "log", "cog"};
+    string beginWord = "bit";
+    string endWord = "bot";
+    vector<string> wordList = {"kit","sit","fog","kot","bot"};
 
     int length = ladderLength(beginWord, endWord, wordList);
 

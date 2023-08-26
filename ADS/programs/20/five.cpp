@@ -51,8 +51,8 @@ void multiplyMatrices(int A[][N], int B[][N], int C[][N], int rowA, int colA, in
 }
 
 int main() {
-    int A[N][N] = {{1, 2, 3}, {4, 5, 6}, {7, 8, 9}};
-    int B[N][N] = {{9, 8, 7}, {6, 5, 4}, {3, 2, 1}};
+    int A[N][N] = {{0, 1, 3}, {7, 3, 1}, {12, 6, 4}};
+    int B[N][N] = {{11, 7, 32}, {9, 2, 9}, {3, 2, 8}};
     int C[N][N] = {0};
 
     multiplyMatrices(A, B, C, 0, 0, 0);

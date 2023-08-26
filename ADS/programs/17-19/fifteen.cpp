@@ -40,8 +40,8 @@ int minRotation(int input, int unlock_code)
 
 int main()
 {
-	int input = 28756;
-	int unlock_code = 98234;
+	int input = 1232;
+	int unlock_code = 1232;
 	cout << "Minimum Rotation = "
 		<< minRotation(input, unlock_code);
 	return 0;

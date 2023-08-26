@@ -1,5 +1,5 @@
 /*
-Implement a linked list and insert elements at the end.
+Implement a linked list with inserting elements from the end.
 
 Input: Enter elements for linked list (enter -1 to stop): 5 7 9 -1
 Output: Linked List: 5 7 9

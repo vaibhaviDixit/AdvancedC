@@ -12,6 +12,7 @@ Enter the Sudoku grid (0 for empty cells):
 1 3 0 0 0 0 2 5 0
 0 0 0 0 0 0 0 7 4
 0 0 5 2 0 6 3 0 0
+
 Output:
 Sudoku Solved:
 3 1 6 5 7 8 4 9 2
@@ -26,7 +27,6 @@ Sudoku Solved:
 
 */
 
-// Code for Sudoku Solver
 
 #include <iostream>
 #include <vector>

@@ -136,7 +136,7 @@ string decode_file(struct MinHeapNode* root, string s)
 
 int main()
 {
-	string str = "linkedin";
+	string str = "snap";
 	string encodedString, decodedString;
 	calcFreq(str, str.length());
 	HuffmanCodes(str.length());
