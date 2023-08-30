@@ -150,7 +150,6 @@ int main()
 	int V = 9;
 	Graph g(V);
 
-	// making above shown graph
 	g.addEdge(0, 1, 4);
 	g.addEdge(0, 7, 8);
 	g.addEdge(1, 2, 8);
@@ -166,7 +165,19 @@ int main()
 	g.addEdge(6, 8, 6);
 	g.addEdge(7, 8, 7);
 
-	cout << g.FindMinimumCycle() << endl;
+    cout << g.FindMinimumCycle() << endl;
+
+	V = 5;
+	Graph g2(V);
+
+	g2.addEdge(0, 1, 1);
+	g2.addEdge(0, 2, 3);
+	g2.addEdge(1, 3, 7);
+	g2.addEdge(2, 3, 3);
+	g2.addEdge(2, 4, 1);
+	g2.addEdge(3, 4, 2);
+    cout << g2.FindMinimumCycle() << endl;
+
 	return 0;
 }
 

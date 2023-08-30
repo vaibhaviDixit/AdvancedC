@@ -106,10 +106,10 @@ void printSolution(int reach[][V])
 int main()
 {
 
-	int graph[V][V] = { {1, 1, 0, 1},
-						{0, 1, 1, 0},
-						{0, 0, 1, 1},
-						{0, 0, 0, 1}
+	int graph[V][V] = { {0, 1, 0, 1},
+						{0, 1, 0, 0},
+						{1, 0, 1, 1},
+						{1, 0, 0, 1}
 					};
 
 	// Print the solution

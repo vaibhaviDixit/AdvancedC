@@ -8,7 +8,7 @@ Output: Shortest path from 1 to 3: 1 -> 2 -> 3
 Input: node1=0, node2=2
 Output:Shortest path from 0 to 2: 0 -> 1 -> 2
 
-Input: node1=3, node2=3
+Input: node1=3, node2=2
 Output:Shortest path from 3 to 2: 3 -> 0 -> 1 -> 2
 
 */

@@ -1,11 +1,11 @@
 /*
-Given a string, count all distinct substrings of the given string.
+Given a string, count all distinct substrings of the given string using trie tree.
 
 Input : abcd
-Output : abcd abc ab a bcd bc b cd c d
+Output : Count of Distinct Substrings: 10
 
 Input : aaa
-Output : aaa aa a aa a a
+Output : Count of Distinct Substrings: 3
 
 */
 
@@ -54,7 +54,7 @@ int countDistinctSubstring(string str)
 
 int main()
 {
-	int count = countDistinctSubstring("aaabc");
+	int count = countDistinctSubstring("abcd");
 
 	cout << "Count of Distinct Substrings: " << count
 		<< endl;

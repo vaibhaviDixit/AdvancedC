@@ -1,5 +1,5 @@
 /*
- A C++ program to find strongly connected components in a given directed graph using Tarjan's algorithm (single DFS)
+ Write a C++ program to find strongly connected components in a given directed graph using Tarjan's algorithm (single DFS)
 
 
  Input: graph=[(0, 1),(1, 2),(2, 3)]

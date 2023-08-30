@@ -111,7 +111,7 @@ bool Graph::isSC()
 
 int main()
 {
-	// Create graphs given in the above diagrams
+
 	Graph g1(5);
 	g1.addEdge(0, 1);
 	g1.addEdge(1, 2);

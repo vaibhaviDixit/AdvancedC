@@ -100,7 +100,7 @@ int getInvCount(int arr[], int n)
 
 int main()
 {
-	int arr[] = { 8, 4, 2, 1 };
+	int arr[] = { 12, 9, 3, 2, 1 };
 	int n = sizeof(arr) / sizeof(int);
 
 	cout << "Number of inversions are : "

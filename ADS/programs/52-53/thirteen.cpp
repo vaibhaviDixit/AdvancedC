@@ -1,5 +1,5 @@
 /*
- A C++ program to find single source longest distances in a DAG
+ Write a C++ program to find single source longest distances in a DAG
 
  Input: graph= [(0, 1, 5),(0, 2, 3),(1, 3, 6),(1, 2, 2),(2, 4, 4),(2, 5, 2),(2, 3, 7),(3, 5, 1),(3, 4, -1),(4, 5, -2)]
  Output:Following are longest distances from source vertex 1: INF 0 2 9 8 10
@@ -12,10 +12,8 @@
 #define NINF INT_MIN
 using namespace std;
 
-// Graph is represented using adjacency list. Every
-// node of adjacency list contains vertex number of
-// the vertex to which edge connects. It also
-// contains weight of the edge
+// Graph is represented using adjacency list. Every node of adjacency list contains vertex number of
+// the vertex to which edge connects. It also contains weight of the edge
 class AdjListNode {
 	int v;
 	int weight;
@@ -146,24 +144,21 @@ int main()
 {
 	// Create a graph
 	// Here vertex numbers are 0, 1, 2, 3, 4, 5 with
-	// following mappings:
-	// 0=r, 1=s, 2=t, 3=x, 4=y, 5=z
+	// following mappings: 0=r, 1=s, 2=t, 3=x, 4=y, 5=z
 	Graph g(6);
 	g.addEdge(0, 1, 5);
-	g.addEdge(0, 2, 3);
-	g.addEdge(1, 3, 6);
-	g.addEdge(1, 2, 2);
+	g.addEdge(0, 2, 1);
+	g.addEdge(1, 3, 2);
+	g.addEdge(1, 2, 3);
 	g.addEdge(2, 4, 4);
-	g.addEdge(2, 5, 2);
+	g.addEdge(2, 5, -2);
 	g.addEdge(2, 3, 7);
 	g.addEdge(3, 5, 1);
-	g.addEdge(3, 4, -1);
-	g.addEdge(4, 5, -2);
+	g.addEdge(3, 4, -6);
+	g.addEdge(4, 5, -9);
 
 	int s = 1;
-	cout << "Following are longest distances from "
-			"source vertex "
-		<< s << " \n";
+	cout << "Following are longest distances from source vertex "<< s << " \n";
 	g.longestPath(s);
 
 	return 0;

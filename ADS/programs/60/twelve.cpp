@@ -1,5 +1,6 @@
 /*
-Given a Directed Acyclic Graph of n nodes (numbered from 1 to n) and m edges. The task is to find the number of sink nodes. A sink node is a node such that no edge emerges out of it.
+Given a Directed Acyclic Graph of n nodes (numbered from 1 to n) and m edges. The task is to find the number of sink nodes.
+A sink node is a node such that no edge emerges out of it.
 
 Input : n = 4, m = 2
         Edges[] = {{2, 3}, {4, 3}}
@@ -38,9 +39,9 @@ int countSink(int n, int m, int edgeFrom[],
 
 int main()
 {
-	int n = 4, m = 2;
-	int edgeFrom[] = { 2, 4 };
-	int edgeTo[] = { 3, 3 };
+	int n = 4, m = 3;
+	int edgeFrom[] = { 1, 2, 3 };
+	int edgeTo[] = { 2, 3, 4 };
 
 	cout << countSink(n, m, edgeFrom, edgeTo) << endl;
 

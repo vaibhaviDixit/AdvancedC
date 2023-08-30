@@ -120,8 +120,8 @@ string commonPrefix(string arr[], int n)
 
 int main()
 {
-	string arr[] = {"zee", "zebra",
-					"zomato", "zen"};
+	string arr[] = {"mango", "pizza",
+					"chole", "rabdi"};
 	int n = sizeof (arr) / sizeof (arr[0]);
 
 	string ans = commonPrefix(arr, n);

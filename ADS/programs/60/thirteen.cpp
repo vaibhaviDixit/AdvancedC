@@ -7,7 +7,7 @@ Given a matrix of dimension M * N where each cell in the matrix can have values 
 Determine what is the minimum time required so that all the oranges become rotten. A rotten orange at index (i,j ) can rot other fresh oranges which are
 its neighbours (up, down, left and right). If it is impossible to rot every orange then simply return -1.
 
-Input:  arr[][C] = { {2, 1, 0, 2, 1}, {1, 0, 1, 2, 1}, {1, 0, 0, 2, 1}};
+Input:  arr[][C] = { {2, 1, 0, 2, 1}, {1, 0, 1, 2, 1}, {1, 0, 0, 2, 1}}
 Output: 2
 Explanation: At 0th time frame:
 {2, 1, 0, 2, 1}
@@ -119,7 +119,7 @@ int rotOranges(vector<vector<int> >& grid)
 int main()
 {
 	vector<vector<int> > arr
-		= { { 0, 1, 2 }, { 0, 1, 2 }, { 2, 1, 1 } };
+		= { { 1, 1, 2 }, { 1, 1, 2 }, { 2, 1, 1 } };
 	int ans = rotOranges(arr);
 	if (ans == -1)
 		cout << "All oranges cannot rotn";
