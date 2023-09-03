@@ -41,7 +41,7 @@ int main()
 {
 	unsigned int x = 0;
 	cout << isPalindrome(x) << endl;
-	x = 10;
+	x = 19;
 	cout << isPalindrome(x) << endl;
 	return 0;
 }

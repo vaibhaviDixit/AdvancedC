@@ -65,5 +65,29 @@ int main()
 	return 0;
 }
 
+/*
+countUtil Function: This function is defined to count the number of arrangements of 'p', 'q', and 'r' characters.
+
+A 3D DP array dp is declared to store intermediate results. The dimensions of dp are [MAX][MAX][MAX].
+
+memset(dp, 0, sizeof(dp)) initializes the entire DP table with zeros.
+
+Base cases are set:
+
+dp[1][0][0] = 1 when there is only one 'p'.
+dp[0][1][0] = 1 when there is only one 'q'.
+dp[0][0][1] = 1 when there is only one 'r'.
+A nested loop structure iterates through all possible combinations of 'p', 'q', and 'r' counts:
+
+The three nested loops represent the counts of 'p', 'q', and 'r'.
+The base cases are skipped since they are already initialized.
+Inside the loops, the DP values are updated based on previous states:
+
+dp[i][j][k] += dp[i - 1][j][k] adds the count when using one 'p'.
+dp[i][j][k] += dp[i][j - 1][k] adds the count when using one 'q'.
+dp[i][j][k] += dp[i][j][k - 1] adds the count when using one 'r'.
+The function returns dp[p][q][r], which represents the count of required arrangements of 'p', 'q', and 'r'.
+
+*/
 
 

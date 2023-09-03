@@ -71,9 +71,9 @@ int min(int x, int y, int z)
 int main()
 {
 	int cost[R][C]
-		= { { 1, 2, 3 }, { 4, 8, 2 }, { 1, 5, 3 } };
+		= { { 2, 2, 3 }, { 9, 8, 2 }, { 7, 5, 3 } };
 
-	cout << minCost(cost, 2, 2) << endl;
+	cout << minCost(cost, 1, 3) << endl;
 
 	return 0;
 }
@@ -81,7 +81,8 @@ int main()
 /*
 Macros: The code uses macros R and C to represent the number of rows and columns in the matrix, respectively.
 
-The minCostMemoized Function: This function calculates the minimum cost path using a memoized dynamic programming approach. It takes the matrix cost[][], current row m, current column n, and a memoization table memo[][] as input.
+The minCostMemoized Function: This function calculates the minimum cost path using a memoized dynamic programming approach.
+It takes the matrix cost[][], current row m, current column n, and a memoization table memo[][] as input.
 
 Base Cases: The function checks for base cases: if either m or n goes out of bounds (negative values) or if (m, n) reaches the top-left corner, in which case the cost at that cell is returned.
 

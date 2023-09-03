@@ -5,7 +5,6 @@ Parity of a number refers to whether it contains an odd or even number of 1-bits
 
 1 --> parity of the set is odd
 0 --> parity of the set is even
-Examples:
 
 Input : 254
 Output : Odd Parity
@@ -13,7 +12,7 @@ Explanation : Binary of 254 is 11111110.
 There are 7 ones. Thus, parity is odd.
 
 Input : 1742346774
-Output : Even
+Output : Even Parity
 
 */
 
@@ -47,7 +46,7 @@ int Parity(int num)
 
 int main()
 {
-	unsigned int num = 1742346774;
+	unsigned int num = 125;
 
 	// Result is 1 for odd parity, 0 for even parity
 	bool result = Parity(num);

@@ -1,6 +1,10 @@
 /*
 A stable tower of height n is a tower consisting of exactly n tiles of unit height stacked vertically in such a way,
 that no bigger tile is placed on a smaller tile.
+We have an infinite number of tiles of sizes 1, 2, …, m. The task is to calculate the number of the different stable towers of height n that can be built
+from these tiles, with a restriction that you can use at most k tiles of each size in the tower.
+
+n (height of the tower), m (number of available blocks), and k (maximum consecutive blocks that can be placed)
 
 Input : n = 3, m = 3, k = 1.
 Output : 1
@@ -58,7 +62,7 @@ int possibleWays(int n, int m, int k)
 
 int main()
 {
-	int n = 3, m = 3, k = 2;
+	int n = 10, m = 4, k = 2;
 	cout << possibleWays(n, m, k) << endl;
 	return 0;
 }

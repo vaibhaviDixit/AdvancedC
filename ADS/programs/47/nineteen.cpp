@@ -42,7 +42,7 @@ int main()
 {
 	int coin[] = {8, 5, 3, 10,2, 1, 15, 25};
 	int n = sizeof(coin) / sizeof(coin[0]);
-	int k = 3;
+	int k = 2;
 	cout << minCost(coin, n, k);
 	return 0;
 }

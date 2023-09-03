@@ -6,15 +6,15 @@ either pick the complete item or don’t pick it (0-1 property).
 
 Prerequisite : 0/1 Knapsack
 
-Input : val[] = {60, 100, 120};
-        wt[] = {10, 20, 30};
-        W = 50;
+Input : val[] = {60, 100, 120}
+        wt[] = {10, 20, 30}
+        W = 50
 Output : 220 //maximum value that can be obtained
          30 20 //weights 20 and 30 are included.
 
-Input : val[] = {40, 100, 50, 60};
-        wt[] = {20, 10, 40, 30};
-        W = 60;
+Input : val[] = {40, 100, 50, 60}
+        wt[] = {20, 10, 40, 30}
+        W = 60
 Output : 200
          30 20 10
 
@@ -73,9 +73,9 @@ void printknapSack(int W, int wt[], int val[], int n)
 
 int main()
 {
-	int val[] = { 60, 100, 120 };
-	int wt[] = { 10, 20, 30 };
-	int W = 50;
+	int val[] = { 200, 500, 320 };
+	int wt[] = { 10, 50, 40 };
+	int W = 250;
 	int n = sizeof(val) / sizeof(val[0]);
 
 	printknapSack(W, wt, val, n);

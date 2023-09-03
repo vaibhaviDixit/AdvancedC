@@ -9,8 +9,6 @@ Output: 000 001 011 010 110 111 101 100
 
 */
 
-
-// C++ implementation of the above approach
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -33,11 +31,10 @@ void GreyCode(int n)
 }
 
 
-// Driver Code
 int main()
 {
 	int n;
-	n = 4;
+	n = 1;
 
 	// Function call
 	GreyCode(n);

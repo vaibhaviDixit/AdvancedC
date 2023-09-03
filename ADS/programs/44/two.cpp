@@ -67,7 +67,7 @@ bool strmatch(char str[], char pattern[], int n, int m)
 int main()
 {
 	char str[] = "baaabab";
-	char pattern[] = "*****ba*****ab";
+	char pattern[] = "*baaaba*";
 	// char pattern[] = "ba*****ab";
 	// char pattern[] = "ba*ab";
 	// char pattern[] = "a*ab";

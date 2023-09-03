@@ -36,8 +36,8 @@ int rightRotate(int n, unsigned int d)
 int main()
 {
 	test g;
-	int n = 16;
-	int d = 2;
+	int n = 4;
+	int d = 1;
 	cout << "Left Rotation of " << n <<" by " << d << " is ";
 	cout << g.leftRotate(n, d);
 	cout << "\nRight Rotation of " << n <<" by " << d << " is ";

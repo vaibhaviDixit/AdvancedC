@@ -47,7 +47,7 @@ int minimumSquare(int a, int b)
 
 int main()
 {
-	int n = 13, m = 29;
+	int n = 10, m = 10;
 	cout << minimumSquare(n, m);
 	return 0;
 }

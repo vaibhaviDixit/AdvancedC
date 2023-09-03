@@ -49,8 +49,8 @@ int findSubsequenceCount(string s, string t)
 
 int main()
 {
-	string T = "za";
-	string S = "pizzapizza";
+	string T = "ra";
+	string S = "rapido";
 	cout << findSubsequenceCount(S, T) << endl;
 	return 0;
 }

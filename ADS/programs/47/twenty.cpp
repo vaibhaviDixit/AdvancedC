@@ -51,7 +51,7 @@ int findMaximum(int arr[], int n, int k)
 
 int main()
 {
-	int arr[] = { 3, 2, 1, 4 };
+	int arr[] = { 8, 7, 1,4 };
 	int n = sizeof(arr) / sizeof(arr[0]);
 	int k = 2;
 	sort(arr, arr + n);
