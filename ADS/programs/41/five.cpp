@@ -1,70 +1,59 @@
 /*
-Given an integer array of coins[ ] of size N representing different types of denominations and an integer sum, the task is to find the
-number of ways to make sum by using different denominations.
+Given n friends, each one can remain single or can be paired up with some other friend. Each friend can be paired only once. Find out the total number of ways in which friends can remain single or can be paired up.
 
-Note: Assume that you have an infinite supply of each type of coin.
-
-Input: sum = 4, coins[] = {1,2,3},
-Output: 4
-Explanation: there are four solutions: {1, 1, 1, 1}, {1, 1, 2}, {2, 2}, {1, 3}.
-
-Input: sum = 10, coins[] = {2, 5, 3, 6}
-Output: 5
+Input  : n = 3
+Output : 4
+Explanation:
+{1}, {2}, {3} : all single
+{1}, {2, 3} : 2 and 3 paired but 1 is single.
+{1, 2}, {3} : 1 and 2 are paired but 3 is single.
+{1, 3}, {2} : 1 and 3 are paired but 2 is single.
+Note that {1, 2} and {2, 1} are considered same.
 
 */
 
-#include <bits/stdc++.h>
 
+// C++ program for solution of friends pairing problem
+#include <bits/stdc++.h>
 using namespace std;
 
-// Returns total distinct ways to make sum using n coins of different denominations
-int count(vector<int>& coins, int n, int sum)
+// Returns count of ways n people can remain single or paired up.
+int countFriendsPairings(int n)
 {
-	// 2d dp array where n is the number of coin
-	// denominations and sum is the target sum
-	vector<vector<int> > dp(n + 1, vector<int>(sum + 1, 0));
+	int dp[n + 1];
 
-	// Represents the base case where the target sum is 0, and there is only one way to make change: by not selecting any coin
-	dp[0][0] = 1;
-	for (int i = 1; i <= n; i++) {
-		for (int j = 0; j <= sum; j++) {
-
-			// Add the number of ways to make change without using the current coin,
-			dp[i][j] += dp[i - 1][j];
-
-			if ((j - coins[i - 1]) >= 0) {
-
-				// Add the number of ways to make change
-				// using the current coin
-				dp[i][j] += dp[i][j - coins[i - 1]];
-			}
-		}
+	// Filling dp[] in bottom-up manner using
+	// recursive formula explained above.
+	for (int i = 0; i <= n; i++) {
+		if (i <= 2)
+			dp[i] = i;
+		else
+			dp[i] = dp[i - 1] + (i - 1) * dp[i - 2];
 	}
-	return dp[n][sum];
-}
 
+	return dp[n];
+}
 
 int main()
 {
-	vector<int> coins{ 1, 2, 3 };
-	int n = 3;
-	int sum = 5;
-	cout << count(coins, n, sum);
+	int n = 4;
+	cout << countFriendsPairings(n) << endl;
 	return 0;
 }
 
 /*
-The count Function: This function calculates the total distinct ways to make a given sum using a set of different coin denominations. It takes three parameters: a reference to a vector of integers coins (denoting the coin denominations), an integer n (the number of coin denominations), and an integer sum (the target sum).
+The countFriendsPairings function is defined to calculate the number of ways 'n' people can remain single or pair up. It uses dynamic programming to store and compute the counts.
 
-2D DP Array: A 2D vector dp of size (n + 1) x (sum + 1) is created to store the dynamic programming table. Each cell dp[i][j] represents the number of ways to make a sum of j using the first i coin denominations.
+Inside the countFriendsPairings function:
 
-Base Case: The base case dp[0][0] is initialized to 1 because there is only one way to make change for a sum of 0: by not selecting any coin.
+An array dp[] of size (n + 1) is created to store the counts of ways for each value of 'n.'
 
-Dynamic Programming Loop: Two nested loops iterate over the coin denominations and the target sum, respectively. For each denomination i and sum j, the following steps are performed:
+A loop runs from 0 to 'n' to fill the dp[] array with counts.
 
-The value dp[i][j] is updated by adding the number of ways to make change without using the current coin (which is dp[i - 1][j]).
-If subtracting the current coin's value (coins[i - 1]) from the current sum (j) results in a valid index, the value dp[i][j] is further updated by adding the number of ways to make change using the current coin (which is dp[i][j - coins[i - 1]]).
+For each value of 'i' in the loop:
+
+If 'i' is less than or equal to 2, it means there are 0, 1, or 2 people, and they can remain single or pair up in 'i' ways.
+
+For values of 'i' greater than 2, the count is calculated using the recursive formula explained in the comments.
 
 */
-
-
